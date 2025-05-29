@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center bg-white">
@@ -15,12 +17,18 @@ const Hero = () => {
               Create something beautiful with our minimalist approach to design and functionality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors">
+              <Link 
+                to="/about"
+                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors text-center"
+              >
                 Learn More
-              </button>
-              <button className="px-8 py-3 border border-gray-300 text-gray-900 text-sm font-medium tracking-wide hover:border-gray-400 transition-colors">
+              </Link>
+              <Link 
+                to="/treatments"
+                className="px-8 py-3 border border-gray-300 text-gray-900 text-sm font-medium tracking-wide hover:border-gray-400 transition-colors text-center"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
 
