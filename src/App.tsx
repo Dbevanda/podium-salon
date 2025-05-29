@@ -9,7 +9,9 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Treatments from "./pages/Treatments";
-import Products from "./pages/Products";
+import FacialRejuvenation from "./pages/FacialRejuvenation";
+import BodyWellness from "./pages/BodyWellness";
+import AntiAgingTherapy from "./pages/AntiAgingTherapy";
 import The5Elements from "./pages/The5Elements";
 import NotFound from "./pages/NotFound";
 
@@ -24,7 +26,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/treatments" element={<Treatments />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/treatments/facial-rejuvenation" element={<FacialRejuvenation />} />
+          <Route path="/treatments/body-wellness" element={<BodyWellness />} />
+          <Route path="/treatments/anti-aging" element={<AntiAgingTherapy />} />
           <Route path="/the-5-elements" element={<The5Elements />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />

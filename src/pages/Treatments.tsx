@@ -1,8 +1,33 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const Treatments = () => {
+  const treatments = [
+    {
+      id: "facial-rejuvenation",
+      name: "Facial Rejuvenation",
+      description: "Advanced facial treatments for all skin types",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400",
+      price: "$150"
+    },
+    {
+      id: "body-wellness",
+      name: "Body Wellness",
+      description: "Rejuvenating body treatments for complete wellness",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
+      price: "$200"
+    },
+    {
+      id: "anti-aging",
+      name: "Anti-Aging Therapy",
+      description: "Cutting-edge anti-aging solutions",
+      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&h=400",
+      price: "$250"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -19,18 +44,26 @@ const Treatments = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-medium text-gray-900 mb-4">Facial Treatments</h3>
-                <p className="text-gray-600">Advanced facial treatments for all skin types.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-medium text-gray-900 mb-4">Body Treatments</h3>
-                <p className="text-gray-600">Rejuvenating body treatments for complete wellness.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-medium text-gray-900 mb-4">Anti-Aging</h3>
-                <p className="text-gray-600">Cutting-edge anti-aging solutions.</p>
-              </div>
+              {treatments.map((treatment) => (
+                <Link 
+                  key={treatment.id} 
+                  to={`/treatments/${treatment.id}`}
+                  className="group cursor-pointer"
+                >
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform group-hover:scale-105">
+                    <img 
+                      src={treatment.image} 
+                      alt={treatment.name}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <h3 className="text-xl font-medium text-gray-900 mb-2">{treatment.name}</h3>
+                      <p className="text-gray-600 mb-3">{treatment.description}</p>
+                      <p className="text-lg font-semibold text-gray-900">{treatment.price}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

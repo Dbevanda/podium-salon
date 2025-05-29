@@ -26,9 +26,6 @@ const Header = () => {
             <Link to="/treatments" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               Treatments
             </Link>
-            <Link to="/products" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
-              Products
-            </Link>
             <Link to="/the-5-elements" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               The 5 elements
             </Link>
@@ -60,9 +57,6 @@ const Header = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 Treatments
-              </Link>
-              <Link to="/products" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
-                Products
               </Link>
               <Link to="/the-5-elements" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 The 5 elements
