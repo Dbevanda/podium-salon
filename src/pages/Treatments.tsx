@@ -10,21 +10,24 @@ const Treatments = () => {
       name: "Facial Rejuvenation",
       description: "Advanced facial treatments for all skin types",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400",
-      price: "$150"
+      duration: "90 minutes",
+      suitableFor: "All skin types, especially mature and aging skin"
     },
     {
       id: "body-wellness",
       name: "Body Wellness",
       description: "Rejuvenating body treatments for complete wellness",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
-      price: "$200"
+      duration: "120 minutes",
+      suitableFor: "All skin types, ideal for stressed and tired skin"
     },
     {
       id: "anti-aging",
       name: "Anti-Aging Therapy",
       description: "Cutting-edge anti-aging solutions",
       image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&h=400",
-      price: "$250"
+      duration: "75 minutes",
+      suitableFor: "Mature skin with signs of aging, wrinkles, and sun damage"
     }
   ];
 
@@ -59,7 +62,14 @@ const Treatments = () => {
                     <div className="p-6">
                       <h3 className="text-xl font-medium text-gray-900 mb-2">{treatment.name}</h3>
                       <p className="text-gray-600 mb-3">{treatment.description}</p>
-                      <p className="text-lg font-semibold text-gray-900">{treatment.price}</p>
+                      <div className="space-y-2">
+                        <p className="text-sm text-gray-700">
+                          <span className="font-medium">Duration:</span> {treatment.duration}
+                        </p>
+                        <p className="text-sm text-gray-700">
+                          <span className="font-medium">Suitable for:</span> {treatment.suitableFor}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </Link>
