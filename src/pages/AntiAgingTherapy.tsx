@@ -5,15 +5,6 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const AntiAgingTherapy = () => {
-  const ingredients = [
-    "Advanced Peptides",
-    "Stem Cell Extract",
-    "Growth Factors",
-    "Antioxidant Complex",
-    "Micro-Needling Serum",
-    "LED Light Therapy"
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -53,18 +44,6 @@ const AntiAgingTherapy = () => {
                   <h2 className="text-2xl font-medium text-gray-900 mb-4">Price</h2>
                   <p className="text-3xl font-semibold text-gray-900">$250</p>
                   <p className="text-gray-600">per session</p>
-                </div>
-                
-                <div>
-                  <h2 className="text-2xl font-medium text-gray-900 mb-4">Ingredients</h2>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {ingredients.map((ingredient, index) => (
-                      <li key={index} className="text-gray-600 flex items-center">
-                        <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
-                        {ingredient}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </div>
