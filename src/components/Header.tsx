@@ -13,7 +13,7 @@ const Header = () => {
           {/* Brand Name */}
           <div className="mb-3">
             <Link to="/">
-              <h1 className="text-3xl md:text-4xl font-medium text-gray-900 tracking-wide">
+              <h1 className="text-3xl md:text-4xl font-medium text-gray-900 tracking-wide font-avenir">
                 PODIUM
               </h1>
             </Link>
@@ -21,18 +21,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
-              Home
+            <Link to="/treatments" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              Treatments
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
-              About
+            <Link to="/products" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              Products
             </Link>
-            <Link to="/services" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
-              Services
+            <Link to="/the-5-elements" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              The 5 elements
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
-              Contact
+            <Link to="/about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              About us
             </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              Contact us
+            </Link>
+            <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase font-avenir">
+              Future5
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -50,18 +56,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
-                Home
+              <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                Treatments
               </Link>
-              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
-                About
+              <Link to="/products" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                Products
               </Link>
-              <Link to="/services" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
-                Services
+              <Link to="/the-5-elements" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                The 5 elements
               </Link>
-              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
-                Contact
+              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                About us
               </Link>
+              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                Contact us
+              </Link>
+              <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center font-avenir">
+                Future5
+              </a>
             </div>
           </div>
         )}
