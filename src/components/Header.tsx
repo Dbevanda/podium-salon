@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-gray-100/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center py-4">
+        <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="mb-3">
+          <div>
             <Link to="/">
               <img 
                 src="/lovable-uploads/6da874c1-d4f8-4efb-8712-c328e0d4ceba.png" 
@@ -44,7 +44,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden absolute right-4 top-4">
+          <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-gray-900"
