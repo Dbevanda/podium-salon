@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,25 +12,27 @@ const Header = () => {
         <div className="flex flex-col items-center py-4">
           {/* Brand Name */}
           <div className="mb-3">
-            <h1 className="text-3xl md:text-4xl font-playfair font-medium text-gray-900 tracking-wide">
-              PODIUM
-            </h1>
+            <Link to="/">
+              <h1 className="text-3xl md:text-4xl font-medium text-gray-900 tracking-wide">
+                PODIUM
+              </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <Link to="/" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               Home
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               About
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            </Link>
+            <Link to="/services" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               Services
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -47,18 +50,18 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#home" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 Home
-              </a>
-              <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              </Link>
+              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 About
-              </a>
-              <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              </Link>
+              <Link to="/services" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 Services
-              </a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              </Link>
+              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}
