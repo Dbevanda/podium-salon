@@ -9,7 +9,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/ddc95419-1919-43fa-8230-a940853d09a1.png" 
               alt="Podium Logo" 
-              className="h-12 w-auto mx-auto md:mx-0 mb-2"
+              className="h-16 w-auto mx-auto md:mx-0 mb-2"
             />
             <p className="text-gray-900 font-medium">Podium</p>
             <p className="text-gray-600 text-sm">Premium Beauty & Wellness</p>
