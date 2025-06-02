@@ -7,14 +7,14 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-sm border-b border-gray-200 z-50">
+    <header className="fixed top-0 left-0 right-0 backdrop-blur-sm border-b border-gray-200 z-50" style={{ backgroundColor: '#F5F4F1' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/">
               <img 
-                src="/lovable-uploads/6da874c1-d4f8-4efb-8712-c328e0d4ceba.png" 
+                src="/lovable-uploads/383f3d68-aa68-47bf-b004-253309eba79d.png" 
                 alt="Podium Logo" 
                 className="h-14 w-auto"
               />
@@ -53,7 +53,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
+          <div className="md:hidden border-t border-gray-200" style={{ backgroundColor: '#F5F4F1' }}>
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
                 Treatments
