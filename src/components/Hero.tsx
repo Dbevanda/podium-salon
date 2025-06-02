@@ -9,25 +9,34 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-4xl md:text-6xl font-light text-gray-900 leading-tight">
-              Elegant
+              Podium Zagreb
               <br />
-              <span className="font-normal">Solutions</span>
+              <span className="font-normal">Premium Beauty & Wellness</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-              Create something beautiful with our minimalist approach to design and functionality.
+              Experience the future of beauty with our exclusive Future5 treatments and holistic wellness solutions. 
+              Discover premium beauty services in Zagreb's most elegant salon, where ancient wisdom meets modern innovation.
             </p>
+            <div className="space-y-2">
+              <p className="text-sm text-gray-700">
+                <span className="font-medium">Specializing in:</span> Future5 Technology • 5 Elements Philosophy • Advanced Skincare
+              </p>
+              <p className="text-sm text-gray-700">
+                <span className="font-medium">Location:</span> Zagreb, Croatia
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/about"
                 className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors text-center"
               >
-                Learn More
+                Learn More About Podium
               </Link>
               <Link 
                 to="/treatments"
                 className="px-8 py-3 border border-gray-300 text-gray-900 text-sm font-medium tracking-wide hover:border-gray-400 transition-colors text-center"
               >
-                Get Started
+                Explore Future5 Treatments
               </Link>
             </div>
           </div>
@@ -35,7 +44,7 @@ const Hero = () => {
           {/* Image Placeholder */}
           <div className="relative">
             <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center">
-              <p className="text-gray-400 text-sm">Your Image Here</p>
+              <p className="text-gray-400 text-sm">Podium Zagreb Salon</p>
             </div>
           </div>
         </div>
