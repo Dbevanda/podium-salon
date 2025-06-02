@@ -8,7 +8,7 @@ const FacialRejuvenation = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-32">
+      <main className="pt-20">
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link to="/treatments" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
