@@ -16,26 +16,26 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/ddc95419-1919-43fa-8230-a940853d09a1.png" 
                 alt="Podium Logo" 
-                className="h-14 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/treatments" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <Link to="/treatments" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 uppercase hover:scale-105">
               Treatments
             </Link>
-            <Link to="/the-5-elements" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <Link to="/the-5-elements" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 uppercase hover:scale-105">
               The 5 elements
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <Link to="/about" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 uppercase hover:scale-105">
               About us
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <Link to="/contact" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 uppercase hover:scale-105">
               Contact us
             </Link>
-            <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-colors uppercase">
+            <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 uppercase hover:scale-105">
               Future5
             </a>
           </nav>
@@ -55,19 +55,19 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200" style={{ backgroundColor: '#FCFBFA' }}>
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 hover:scale-105">
                 Treatments
               </Link>
-              <Link to="/the-5-elements" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <Link to="/the-5-elements" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 hover:scale-105">
                 The 5 elements
               </Link>
-              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 hover:scale-105">
                 About us
               </Link>
-              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 hover:scale-105">
                 Contact us
               </Link>
-              <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center">
+              <a href="https://www.futurecosmetics.com/" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 hover:scale-105">
                 Future5
               </a>
             </div>
