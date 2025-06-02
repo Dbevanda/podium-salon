@@ -1,13 +1,13 @@
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-200 py-8 mt-auto" style={{ backgroundColor: '#F5F4F1' }}>
+    <footer className="border-t border-gray-200 py-8 mt-auto" style={{ backgroundColor: '#FCFBFA' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Brand */}
           <div className="text-center md:text-left">
             <img 
-              src="/lovable-uploads/383f3d68-aa68-47bf-b004-253309eba79d.png" 
+              src="/lovable-uploads/ddc95419-1919-43fa-8230-a940853d09a1.png" 
               alt="Podium Logo" 
               className="h-8 w-auto mx-auto md:mx-0 mb-2"
             />
