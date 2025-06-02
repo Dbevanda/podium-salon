@@ -1,9 +1,9 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-100 py-12">
+    <footer className="bg-white border-t border-gray-200 py-8 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Brand */}
           <div className="text-center md:text-left">
             <img 
@@ -15,17 +15,12 @@ const Footer = () => {
             <p className="text-gray-600 text-sm">Premium Beauty & Wellness</p>
           </div>
 
-          {/* Contact Details */}
+          {/* Contact Details - moved to complete right */}
           <div className="text-center md:text-right">
             <h3 className="text-gray-900 font-medium mb-2">Contact Us</h3>
             <p className="text-gray-600 text-sm">info@podium.com</p>
             <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
             <p className="text-gray-600 text-sm">123 Beauty Street, Wellness City</p>
-          </div>
-
-          {/* Copyright */}
-          <div className="text-center">
-            <p className="text-gray-500 text-sm">© 2024 Podium. All rights reserved.</p>
           </div>
         </div>
       </div>
