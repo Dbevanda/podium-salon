@@ -1,7 +1,10 @@
 
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -9,20 +12,19 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-4xl md:text-6xl font-light text-gray-900 leading-tight">
-              Podium Zagreb
+              {t('hero.title')}
               <br />
-              <span className="font-normal">Premium Beauty & Wellness</span>
+              <span className="font-normal">{t('hero.subtitle')}</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-              Experience the future of beauty with our exclusive Future5 treatments and holistic wellness solutions. 
-              Discover premium beauty services in Zagreb's most elegant salon, where ancient wisdom meets modern innovation.
+              {t('hero.description')}
             </p>
             <div className="space-y-2">
               <p className="text-sm text-gray-700">
-                <span className="font-medium">Specializing in:</span> Future5 Technology • 5 Elements Philosophy • Advanced Skincare
+                <span className="font-medium">{t('hero.specializing')}</span> {t('hero.specialties')}
               </p>
               <p className="text-sm text-gray-700">
-                <span className="font-medium">Location:</span> Zagreb, Croatia
+                <span className="font-medium">{t('hero.location')}</span> {t('hero.locationValue')}
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -30,13 +32,13 @@ const Hero = () => {
                 to="/about"
                 className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors text-center"
               >
-                Learn More About Podium
+                {t('hero.learnMore')}
               </Link>
               <Link 
                 to="/treatments"
                 className="px-8 py-3 border border-gray-300 text-gray-900 text-sm font-medium tracking-wide hover:border-gray-400 transition-colors text-center"
               >
-                Explore Future5 Treatments
+                {t('hero.exploreTreatments')}
               </Link>
             </div>
           </div>

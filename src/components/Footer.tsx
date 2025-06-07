@@ -1,5 +1,9 @@
 
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-gray-200 py-8 mt-auto" style={{ backgroundColor: '#FCFBFA' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,15 +13,15 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/ddc95419-1919-43fa-8230-a940853d09a1.png" 
               alt="Podium Logo" 
-              className="h-16 w-auto mx-auto md:mx-0 mb-2"
+              className="h-20 w-auto mx-auto md:mx-0 mb-2"
             />
             <p className="text-gray-900 font-medium">Podium</p>
-            <p className="text-gray-600 text-sm">Premium Beauty & Wellness</p>
+            <p className="text-gray-600 text-sm">{t('footer.tagline')}</p>
           </div>
 
           {/* Contact Details - moved to complete right */}
           <div className="text-center md:text-right">
-            <h3 className="text-gray-900 font-medium mb-2">Contact Us</h3>
+            <h3 className="text-gray-900 font-medium mb-2">{t('footer.contact')}</h3>
             <p className="text-gray-600 text-sm">info@podium.com</p>
             <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
             <p className="text-gray-600 text-sm">123 Beauty Street, Wellness City</p>

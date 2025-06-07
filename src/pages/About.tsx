@@ -2,9 +2,11 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
   const [showMore, setShowMore] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -23,36 +25,25 @@ const About = () => {
               {/* Text Content */}
               <div className="space-y-6 order-1 lg:order-2">
                 <h1 className="text-3xl md:text-4xl font-light text-gray-900">
-                  About Podium Zagreb
+                  {t('about.title')}
                 </h1>
                 <p className="text-gray-600 leading-relaxed">
-                  Podium is Zagreb's premier beauty and wellness salon, where we combine the power of simplicity and elegance 
-                  with cutting-edge Future5 technology. Our approach merges minimalist design principles with functional 
-                  excellence to create experiences that are both beautiful and meaningful.
+                  {t('about.description1')}
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Located in the heart of Zagreb, Podium salon offers exclusive Future5 treatments that represent the 
-                  future of beauty and wellness. Every treatment is an opportunity to push boundaries and explore new 
-                  possibilities while maintaining the highest standards of quality and attention to detail.
+                  {t('about.description2')}
                 </p>
                 
                 {showMore && (
                   <div className="space-y-4">
                     <p className="text-gray-600 leading-relaxed">
-                      Our expert team at Podium Zagreb consists of experienced professionals who are passionate about delivering 
-                      exceptional Future5 treatment results. We take pride in our personalized approach, ensuring that 
-                      each client receives the attention and care they deserve in our premium Zagreb location.
+                      {t('about.description3')}
                     </p>
                     <p className="text-gray-600 leading-relaxed">
-                      With years of experience in the beauty and wellness industry, Podium salon has developed 
-                      innovative Future5 treatments and techniques that set us apart from other Zagreb beauty salons. 
-                      Our commitment to continuous learning and improvement drives us to stay at the 
-                      forefront of industry developments.
+                      {t('about.description4')}
                     </p>
                     <p className="text-gray-600 leading-relaxed">
-                      We believe that true beauty comes from within, and our holistic 5 elements approach 
-                      addresses both the physical and emotional aspects of wellness. Our goal at Podium Zagreb is 
-                      to help you feel confident, refreshed, and revitalized through our premium Future5 treatments.
+                      {t('about.description5')}
                     </p>
                   </div>
                 )}
@@ -61,7 +52,7 @@ const About = () => {
                   onClick={() => setShowMore(!showMore)}
                   className="text-gray-900 font-medium text-sm tracking-wide border-b border-gray-300 hover:border-gray-900 transition-colors pb-1"
                 >
-                  {showMore ? "Read Less" : "Read More About Podium"}
+                  {showMore ? t('about.readLess') : t('about.readMore')}
                 </button>
               </div>
             </div>
