@@ -2,32 +2,35 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Treatments = () => {
+  const { t } = useLanguage();
+
   const treatments = [
     {
       id: "facial-rejuvenation",
-      name: "Facial Rejuvenation",
-      description: "Advanced facial treatments for all skin types",
+      name: t('treatments.facial.name'),
+      description: t('treatments.facial.description'),
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400",
-      duration: "90 minutes",
-      suitableFor: "All skin types, especially mature and aging skin"
+      duration: t('treatments.facial.duration'),
+      suitableFor: t('treatments.facial.suitableFor')
     },
     {
       id: "body-wellness",
-      name: "Body Wellness",
-      description: "Rejuvenating body treatments for complete wellness",
+      name: t('treatments.body.name'),
+      description: t('treatments.body.description'),
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
-      duration: "120 minutes",
-      suitableFor: "All skin types, ideal for stressed and tired skin"
+      duration: t('treatments.body.duration'),
+      suitableFor: t('treatments.body.suitableFor')
     },
     {
       id: "anti-aging",
-      name: "Anti-Aging Therapy",
-      description: "Cutting-edge anti-aging solutions",
+      name: t('treatments.antiAging.name'),
+      description: t('treatments.antiAging.description'),
       image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&h=400",
-      duration: "75 minutes",
-      suitableFor: "Mature skin with signs of aging, wrinkles, and sun damage"
+      duration: t('treatments.antiAging.duration'),
+      suitableFor: t('treatments.antiAging.suitableFor')
     }
   ];
 
@@ -39,10 +42,10 @@ const Treatments = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-                Treatments
+                {t('treatments.title')}
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Discover our range of advanced treatments designed to enhance your natural beauty.
+                {t('treatments.description')}
               </p>
             </div>
             
@@ -64,10 +67,10 @@ const Treatments = () => {
                       <p className="text-gray-600 mb-3">{treatment.description}</p>
                       <div className="space-y-2">
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Duration:</span> {treatment.duration}
+                          <span className="font-medium">{t('treatments.duration')}</span> {treatment.duration}
                         </p>
                         <p className="text-sm text-gray-700">
-                          <span className="font-medium">Suitable for:</span> {treatment.suitableFor}
+                          <span className="font-medium">{t('treatments.suitable')}</span> {treatment.suitableFor}
                         </p>
                       </div>
                     </div>

@@ -3,8 +3,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const FacialRejuvenation = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -13,37 +16,37 @@ const FacialRejuvenation = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link to="/treatments" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
               <ArrowLeft size={20} className="mr-2" />
-              Back to Treatments
+              {t('treatment.backToTreatments')}
             </Link>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
                 <img 
                   src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=600"
-                  alt="Facial Rejuvenation Treatment"
+                  alt={t('treatments.facial.name')}
                   className="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
               
               <div>
                 <h1 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
-                  Facial Rejuvenation
+                  {t('treatments.facial.name')}
                 </h1>
                 
                 <div className="mb-8">
-                  <h2 className="text-2xl font-medium text-gray-900 mb-4">Description</h2>
+                  <h2 className="text-2xl font-medium text-gray-900 mb-4">{t('treatment.description')}</h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Our advanced facial rejuvenation treatment combines cutting-edge technology with premium skincare ingredients to restore your skin's natural radiance and vitality.
+                    {t('treatment.facial.description1')}
                   </p>
                   <p className="text-gray-600 leading-relaxed">
-                    This comprehensive treatment targets fine lines, uneven skin tone, and loss of elasticity, leaving your skin refreshed, renewed, and glowing with health.
+                    {t('treatment.facial.description2')}
                   </p>
                 </div>
                 
                 <div className="mb-8">
-                  <h2 className="text-2xl font-medium text-gray-900 mb-4">Price</h2>
+                  <h2 className="text-2xl font-medium text-gray-900 mb-4">{t('treatment.price')}</h2>
                   <p className="text-3xl font-semibold text-gray-900">$150</p>
-                  <p className="text-gray-600">per session</p>
+                  <p className="text-gray-600">{t('treatment.perSession')}</p>
                 </div>
               </div>
             </div>

@@ -2,8 +2,10 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,10 +42,10 @@ const Contact = () => {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-                Get In Touch
+                {t('contact.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Let's discuss your project and see how we can work together.
+                {t('contact.description')}
               </p>
             </div>
 
@@ -51,11 +53,11 @@ const Contact = () => {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-4">Contact Information</h3>
+                  <h3 className="text-lg font-medium text-gray-900 mb-4">{t('contact.info')}</h3>
                   <div className="space-y-3">
-                    <p className="text-gray-600">Email: hello@podium.com</p>
-                    <p className="text-gray-600">Phone: +1 (555) 123-4567</p>
-                    <p className="text-gray-600">Address: 123 Design Street, City, State 12345</p>
+                    <p className="text-gray-600">{t('contact.email')}</p>
+                    <p className="text-gray-600">{t('contact.phone')}</p>
+                    <p className="text-gray-600">{t('contact.address')}</p>
                   </div>
                 </div>
               </div>
@@ -67,7 +69,7 @@ const Contact = () => {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Your Name"
+                      placeholder={t('contact.form.name')}
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -78,7 +80,7 @@ const Contact = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Your Email"
+                      placeholder={t('contact.form.email')}
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -89,7 +91,7 @@ const Contact = () => {
                     <textarea
                       rows={5}
                       name="message"
-                      placeholder="Your Message"
+                      placeholder={t('contact.form.message')}
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -100,7 +102,7 @@ const Contact = () => {
                     type="submit"
                     className="w-full py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors"
                   >
-                    Send Message
+                    {t('contact.form.send')}
                   </button>
                 </form>
               </div>

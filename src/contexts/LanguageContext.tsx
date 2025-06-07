@@ -101,6 +101,186 @@ const translations: Translations = {
     en: 'Read Less'
   },
   
+  // Treatments page
+  'treatments.title': {
+    hr: 'Tretmani',
+    en: 'Treatments'
+  },
+  'treatments.description': {
+    hr: 'Otkrijte naš asortiman naprednih tretmana dizajniranih da poboljšaju vašu prirodnu ljepotu.',
+    en: 'Discover our range of advanced treatments designed to enhance your natural beauty.'
+  },
+  'treatments.facial.name': {
+    hr: 'Pomlađivanje lica',
+    en: 'Facial Rejuvenation'
+  },
+  'treatments.facial.description': {
+    hr: 'Napredni tretmani lica za sve tipove kože',
+    en: 'Advanced facial treatments for all skin types'
+  },
+  'treatments.facial.duration': {
+    hr: '90 minuta',
+    en: '90 minutes'
+  },
+  'treatments.facial.suitableFor': {
+    hr: 'Svi tipovi kože, posebno zrela koža s znakovima starenja',
+    en: 'All skin types, especially mature and aging skin'
+  },
+  'treatments.body.name': {
+    hr: 'Wellness tijela',
+    en: 'Body Wellness'
+  },
+  'treatments.body.description': {
+    hr: 'Revitalizirajući tretmani tijela za potpuni wellness',
+    en: 'Rejuvenating body treatments for complete wellness'
+  },
+  'treatments.body.duration': {
+    hr: '120 minuta',
+    en: '120 minutes'
+  },
+  'treatments.body.suitableFor': {
+    hr: 'Svi tipovi kože, idealno za stresnu i umornu kožu',
+    en: 'All skin types, ideal for stressed and tired skin'
+  },
+  'treatments.antiAging.name': {
+    hr: 'Anti-aging terapija',
+    en: 'Anti-Aging Therapy'
+  },
+  'treatments.antiAging.description': {
+    hr: 'Najsuvremenija anti-aging rješenja',
+    en: 'Cutting-edge anti-aging solutions'
+  },
+  'treatments.antiAging.duration': {
+    hr: '75 minuta',
+    en: '75 minutes'
+  },
+  'treatments.antiAging.suitableFor': {
+    hr: 'Zrela koža sa znakovima starenja, borama i oštećenjima od sunca',
+    en: 'Mature skin with signs of aging, wrinkles, and sun damage'
+  },
+  'treatments.duration': {
+    hr: 'Trajanje:',
+    en: 'Duration:'
+  },
+  'treatments.suitable': {
+    hr: 'Pogodno za:',
+    en: 'Suitable for:'
+  },
+  
+  // Treatment detail pages
+  'treatment.backToTreatments': {
+    hr: 'Povratak na tretmane',
+    en: 'Back to Treatments'
+  },
+  'treatment.description': {
+    hr: 'Opis',
+    en: 'Description'
+  },
+  'treatment.price': {
+    hr: 'Cijena',
+    en: 'Price'
+  },
+  'treatment.perSession': {
+    hr: 'po sesiji',
+    en: 'per session'
+  },
+  'treatment.facial.description1': {
+    hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',
+    en: 'Our advanced facial rejuvenation treatment combines cutting-edge technology with premium skincare ingredients to restore your skin\'s natural radiance and vitality.'
+  },
+  'treatment.facial.description2': {
+    hr: 'Ovaj sveobuhvatan tretman cilja fine linije, nejednolični ton kože i gubitak elastičnosti, ostavljajući vašu kožu osvježenu, obnovljenu i blistavu od zdravlja.',
+    en: 'This comprehensive treatment targets fine lines, uneven skin tone, and loss of elasticity, leaving your skin refreshed, renewed, and glowing with health.'
+  },
+  'treatment.body.description1': {
+    hr: 'Doživite potpuno pomlađivanje tijela s našim holističkim wellness tretmanom koji kombinira terapeutsku masažu, hranjive body wrap-ove i premium njegu kože.',
+    en: 'Experience complete body rejuvenation with our holistic wellness treatment that combines therapeutic massage, nourishing body wraps, and premium skincare.'
+  },
+  'treatment.body.description2': {
+    hr: 'Ovaj tretman cijelog tijela potiče cirkulaciju, smanjuje napetost i duboko hidrira vašu kožu za potpuno wellness iskustvo.',
+    en: 'This full-body treatment promotes circulation, reduces tension, and deeply moisturizes your skin for a complete wellness experience.'
+  },
+  'treatment.antiAging.description1': {
+    hr: 'Naš najnapredniji anti-aging tretman kombinira najsuvremeniju tehnologiju sa znanstveno dokazanim sastojcima za borbu protiv znakova starenja na staničnoj razini.',
+    en: 'Our most advanced anti-aging treatment combines cutting-edge technology with scientifically proven ingredients to combat signs of aging at the cellular level.'
+  },
+  'treatment.antiAging.description2': {
+    hr: 'Ovaj premium tretman cilja duboke bore, mrlje od starenja i gubitak čvrstoće, pružajući vidljive rezultate i dugotrajno pomlađivanje.',
+    en: 'This premium treatment targets deep wrinkles, age spots, and loss of firmness, delivering visible results and long-lasting rejuvenation.'
+  },
+  
+  // Contact page
+  'contact.title': {
+    hr: 'Kontaktirajte nas',
+    en: 'Get In Touch'
+  },
+  'contact.description': {
+    hr: 'Razgovarajmo o vašem projektu i vidimo kako možemo raditi zajedno.',
+    en: 'Let\'s discuss your project and see how we can work together.'
+  },
+  'contact.info': {
+    hr: 'Kontakt informacije',
+    en: 'Contact Information'
+  },
+  'contact.email': {
+    hr: 'Email: hello@podium.com',
+    en: 'Email: hello@podium.com'
+  },
+  'contact.phone': {
+    hr: 'Telefon: +1 (555) 123-4567',
+    en: 'Phone: +1 (555) 123-4567'
+  },
+  'contact.address': {
+    hr: 'Adresa: 123 Design Street, City, State 12345',
+    en: 'Address: 123 Design Street, City, State 12345'
+  },
+  'contact.form.name': {
+    hr: 'Vaše ime',
+    en: 'Your Name'
+  },
+  'contact.form.email': {
+    hr: 'Vaš email',
+    en: 'Your Email'
+  },
+  'contact.form.message': {
+    hr: 'Vaša poruka',
+    en: 'Your Message'
+  },
+  'contact.form.send': {
+    hr: 'Pošaljite poruku',
+    en: 'Send Message'
+  },
+  
+  // 5 Elements page
+  'elements.title': {
+    hr: '5 elemenata',
+    en: 'The 5 Elements'
+  },
+  'elements.description': {
+    hr: 'Naša filozofija ukorijenjena je u drevnoj mudrosti pet elemenata, stvarajući sklad između prirode i ljepote kroz principe tradicionalne kineske medicine.',
+    en: 'Our philosophy is rooted in the ancient wisdom of the five elements, creating harmony between nature and beauty through Traditional Chinese Medicine principles.'
+  },
+  'elements.wood.description': {
+    hr: 'Proljeće. Istok. Rast. Ekspanzija. Vizija. Benevolencija. Fleksibilnost. Kreativnost. Strpljenje. Rođenje. Mladost. Optimizam. Suosjećanje. Mašta. Velikodušnost. Vodstvo. Pionirstvo. Natjecanje.',
+    en: 'Spring. East. Growth. Expansion. Vision. Benevolence. Flexibility. Creativity. Patience. Birth. Youth. Optimism. Compassion. Imagination. Generosity. Leadership. Pioneering. Competition.'
+  },
+  'elements.fire.description': {
+    hr: 'Ljeto. Jug. Radost. Toplina. Entuzijazam. Strast. Komunikacija. Karizma. Ljubav. Smijeh. Kreativnost. Duhovnost. Intuicija. Svjesnost. Transformacija. Izražavanje.',
+    en: 'Summer. South. Joy. Warmth. Enthusiasm. Passion. Communication. Charisma. Love. Laughter. Creativity. Spirituality. Intuition. Awareness. Transformation. Expression.'
+  },
+  'elements.earth.description': {
+    hr: 'Kasno ljeto. Centar. Stabilnost. Uzemljenje. Njega. Podrška. Promišljenost. Praktičnost. Pouzdanost. Simpatija. Pravednost. Žetva. Obilje. Prihvaćanje. Kontemplacija.',
+    en: 'Late Summer. Center. Stability. Grounding. Nurturing. Support. Thoughtfulness. Practicality. Reliability. Sympathy. Fairness. Harvest. Abundance. Acceptance. Contemplation.'
+  },
+  'elements.metal.description': {
+    hr: 'Jesen. Zapad. Žalost. Puštanje. Poštovanje. Čistoća. Preciznost. Organizacija. Struktura. Kvaliteta. Rafiniranost. Razlučivanje. Disciplina. Učinkovitost. Red. Završetak.',
+    en: 'Autumn. West. Grief. Letting go. Respect. Purity. Precision. Organization. Structure. Quality. Refinement. Discernment. Discipline. Efficiency. Order. Completion.'
+  },
+  'elements.water.description': {
+    hr: 'Zima. Sjever. Strah. Snaga volje. Mudrost. Introspekcija. Razmišljanje. Skladištenje. Konzervacija. Izdržljivost. Odlučnost. Ambicija. Rezerviranost. Dubina. Tajanstvenost. Potencijal.',
+    en: 'Winter. North. Fear. Will power. Wisdom. Introspection. Reflection. Storage. Conservation. Endurance. Determination. Ambition. Reserved. Deep. Mysterious. Potential.'
+  },
+  
   // Footer
   'footer.contact': {
     hr: 'Kontaktirajte nas',
