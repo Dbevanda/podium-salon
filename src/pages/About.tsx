@@ -14,17 +14,17 @@ const About = () => {
       <main className="pt-20 flex-grow">
         <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Image Placeholder */}
-              <div className="relative order-2 lg:order-1">
-                <div className="aspect-[4/3] bg-gray-50 rounded-lg shadow-sm flex items-center justify-center">
+            <div className="space-y-12">
+              {/* Image - Always on top, horizontally oriented */}
+              <div className="w-full">
+                <div className="aspect-[16/6] bg-gray-50 rounded-lg shadow-sm flex items-center justify-center">
                   <p className="text-gray-400 text-sm">Podium Zagreb Salon Interior</p>
                 </div>
               </div>
 
-              {/* Text Content */}
-              <div className="space-y-6 order-1 lg:order-2">
-                <h1 className="text-3xl md:text-4xl font-light text-gray-900">
+              {/* Text Content - Always below image */}
+              <div className="max-w-4xl mx-auto space-y-6">
+                <h1 className="text-3xl md:text-4xl font-light text-gray-900 text-center">
                   {t('about.title')}
                 </h1>
                 <p className="text-gray-600 leading-relaxed">
