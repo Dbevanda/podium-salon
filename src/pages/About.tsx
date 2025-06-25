@@ -22,29 +22,44 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Text Content - Always below image */}
+              {/* Text Content with embedded images */}
               <div className="max-w-4xl mx-auto space-y-6">
                 <h1 className="text-3xl md:text-4xl font-light text-gray-900 text-center">
                   {t('about.title')}
                 </h1>
-                <p className="text-gray-600 leading-relaxed">
-                  {t('about.description1')}
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  {t('about.description2')}
-                </p>
+                
+                <div className="relative">
+                  {/* First embedded image - float left */}
+                  <div className="float-left mr-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm flex items-center justify-center">
+                    <p className="text-gray-400 text-xs text-center">Treatment Room</p>
+                  </div>
+                  
+                  <p className="text-gray-600 leading-relaxed">
+                    {t('about.description1')}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {t('about.description2')}
+                  </p>
+                </div>
                 
                 {showMore && (
                   <div className="space-y-4">
-                    <p className="text-gray-600 leading-relaxed">
-                      {t('about.description3')}
-                    </p>
-                    <p className="text-gray-600 leading-relaxed">
-                      {t('about.description4')}
-                    </p>
-                    <p className="text-gray-600 leading-relaxed">
-                      {t('about.description5')}
-                    </p>
+                    <div className="relative">
+                      {/* Second embedded image - float right */}
+                      <div className="float-right ml-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm flex items-center justify-center">
+                        <p className="text-gray-400 text-xs text-center">Wellness Area</p>
+                      </div>
+                      
+                      <p className="text-gray-600 leading-relaxed">
+                        {t('about.description3')}
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        {t('about.description4')}
+                      </p>
+                      <p className="text-gray-600 leading-relaxed">
+                        {t('about.description5')}
+                      </p>
+                    </div>
                   </div>
                 )}
                 
