@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { images, getImageSrc } from "@/config/images";
 
 const BodyWellness = () => {
   const { t } = useLanguage();
@@ -22,7 +23,7 @@ const BodyWellness = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600"
+                  src={getImageSrc(images.treatments.body, "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&h=600")}
                   alt={t('treatments.body.name')}
                   className="w-full h-96 object-cover rounded-lg shadow-lg"
                 />

@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { images, getImageSrc } from "@/config/images";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -43,10 +44,18 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Image */}
           <div className="relative">
-            <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center">
-              <p className="text-gray-400 text-sm">Podium Zagreb Salon</p>
+            <div className="aspect-square bg-gray-50 rounded-lg overflow-hidden">
+              <img 
+                src={getImageSrc(images.home.hero)}
+                alt="Podium Zagreb Salon"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/placeholder.svg';
+                }}
+              />
             </div>
           </div>
         </div>

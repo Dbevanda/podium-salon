@@ -2,6 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { images, getImageSrc } from "@/config/images";
 
 const The5Elements = () => {
   const { t } = useLanguage();
@@ -11,31 +12,31 @@ const The5Elements = () => {
       name: "WOOD", 
       description: t('elements.wood.description'),
       color: "bg-green-50",
-      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&h=400"
+      image: getImageSrc(images.elements.wood, "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&h=400")
     },
     { 
       name: "FIRE", 
       description: t('elements.fire.description'),
       color: "bg-red-50",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&h=400"
+      image: getImageSrc(images.elements.fire, "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&h=400")
     },
     { 
       name: "EARTH", 
       description: t('elements.earth.description'),
       color: "bg-yellow-50",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&h=400"
+      image: getImageSrc(images.elements.earth, "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&h=400")
     },
     { 
       name: "METAL", 
       description: t('elements.metal.description'),
       color: "bg-gray-50",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&h=400"
+      image: getImageSrc(images.elements.metal, "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800&h=400")
     },
     { 
       name: "WATER", 
       description: t('elements.water.description'),
       color: "bg-blue-50",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&h=400"
+      image: getImageSrc(images.elements.water, "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&h=400")
     }
   ];
 
