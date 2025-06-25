@@ -1,0 +1,36 @@
+
+[
+  {
+    "id": "facial-rejuvenation",
+    "name": "treatments.facial.name",
+    "description": "treatments.facial.description",
+    "imageKey": "facial",
+    "duration": "treatments.facial.duration",
+    "suitableFor": "treatments.facial.suitableFor",
+    "price": "$150",
+    "detailDescription1": "treatment.facial.description1",
+    "detailDescription2": "treatment.facial.description2"
+  },
+  {
+    "id": "body-wellness",
+    "name": "treatments.body.name",
+    "description": "treatments.body.description",
+    "imageKey": "body",
+    "duration": "treatments.body.duration",
+    "suitableFor": "treatments.body.suitableFor",
+    "price": "$200",
+    "detailDescription1": "treatment.body.description1",
+    "detailDescription2": "treatment.body.description2"
+  },
+  {
+    "id": "anti-aging",
+    "name": "treatments.antiAging.name",
+    "description": "treatments.antiAging.description",
+    "imageKey": "antiAging",
+    "duration": "treatments.antiAging.duration",
+    "suitableFor": "treatments.antiAging.suitableFor",
+    "price": "$250",
+    "detailDescription1": "treatment.antiAging.description1",
+    "detailDescription2": "treatment.antiAging.description2"
+  }
+]
