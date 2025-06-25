@@ -20,14 +20,6 @@ const Hero = () => {
             <p className="text-lg text-gray-600 leading-relaxed max-w-md">
               {t('hero.description')}
             </p>
-            <div className="space-y-2">
-              <p className="text-sm text-gray-700">
-                <span className="font-medium">{t('hero.specializing')}</span> {t('hero.specialties')}
-              </p>
-              <p className="text-sm text-gray-700">
-                <span className="font-medium">{t('hero.location')}</span> {t('hero.locationValue')}
-              </p>
-            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/about"
