@@ -16,12 +16,10 @@ const About = () => {
         />
       </div>
       
-      <main className="pt-60 flex-grow relative z-10">
-        <section className="py-12 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <AboutTextContent />
-          </div>
-        </section>
+      <main className="pt-16 min-h-screen flex items-center bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-60 relative z-10">
+          <AboutTextContent />
+        </div>
       </main>
       <Footer />
     </div>
