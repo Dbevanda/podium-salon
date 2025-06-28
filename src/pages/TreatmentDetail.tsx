@@ -1,17 +1,29 @@
 
+import { useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { images, getImageSrc } from "@/config/images";
+import { OptimizedImage } from "@/components/common";
 import treatmentsData from "@/data/treatments.json";
 
 const TreatmentDetail = () => {
   const { t } = useLanguage();
   const { id } = useParams<{ id: string }>();
   
-  const treatment = treatmentsData.find(t => t.id === id);
+  const treatment = useMemo(() => 
+    treatmentsData.find(t => t.id === id), [id]
+  );
+  
+  const imageUrl = useMemo(() => {
+    if (!treatment) return "";
+    return getImageSrc(
+      images.treatments[treatment.imageKey as keyof typeof images.treatments], 
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=600"
+    );
+  }, [treatment]);
   
   if (!treatment) {
     return (
@@ -30,11 +42,6 @@ const TreatmentDetail = () => {
     );
   }
 
-  const imageUrl = getImageSrc(
-    images.treatments[treatment.imageKey as keyof typeof images.treatments], 
-    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&h=600"
-  );
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -48,7 +55,7 @@ const TreatmentDetail = () => {
             
             {/* Large background image */}
             <div className="absolute top-0 right-0 w-2/3 h-full">
-              <img 
+              <OptimizedImage 
                 src={imageUrl}
                 alt={t(treatment.name)}
                 className="w-full h-full object-cover opacity-20"
@@ -57,7 +64,7 @@ const TreatmentDetail = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
               <div>
-                <img 
+                <OptimizedImage 
                   src={imageUrl}
                   alt={t(treatment.name)}
                   className="w-full h-96 object-cover rounded-lg shadow-lg"

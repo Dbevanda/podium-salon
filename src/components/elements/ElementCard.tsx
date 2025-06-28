@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { OptimizedImage } from '@/components/common';
 
 interface ElementCardProps {
   element: {
@@ -11,40 +11,17 @@ interface ElementCardProps {
 }
 
 const ElementCard = ({ element, index }: ElementCardProps) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageError, setImageError] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
-  const handleImageError = () => {
-    setImageError(true);
-    setImageLoaded(true);
-  };
-
   return (
     <div className="relative group cursor-pointer">
       {/* Mobile Layout - Stacked */}
       <div className="block md:hidden">
         <div className="mb-6">
           <div className="w-full h-48 rounded-lg overflow-hidden bg-gray-100">
-            {!imageError ? (
-              <img 
-                src={element.image} 
-                alt={element.name} 
-                className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0'
-                }`}
-                loading="lazy"
-                onLoad={handleImageLoad}
-                onError={handleImageError}
-              />
-            ) : (
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">
-                Image not available
-              </div>
-            )}
+            <OptimizedImage 
+              src={element.image} 
+              alt={element.name} 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
         </div>
         <div className="px-4">
@@ -58,22 +35,11 @@ const ElementCard = ({ element, index }: ElementCardProps) => {
         {/* Background Image */}
         <div className={`absolute inset-0 flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} items-center pointer-events-none`}>
           <div className="w-[400px] lg:w-[500px] h-[400px] lg:h-[500px] rounded-full overflow-hidden opacity-20 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0 bg-gray-100">
-            {!imageError ? (
-              <img 
-                src={element.image} 
-                alt={element.name} 
-                className={`w-full h-full object-cover ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0'
-                }`}
-                loading="lazy"
-                onLoad={handleImageLoad}
-                onError={handleImageError}
-              />
-            ) : (
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">
-                Image not available
-              </div>
-            )}
+            <OptimizedImage 
+              src={element.image} 
+              alt={element.name} 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         

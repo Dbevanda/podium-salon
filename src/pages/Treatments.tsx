@@ -1,25 +1,29 @@
 
+import { useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { images, getImageSrc } from "@/config/images";
+import { OptimizedImage } from "@/components/common";
 import treatmentsData from "@/data/treatments.json";
 
 const Treatments = () => {
   const { t } = useLanguage();
 
-  const treatments = treatmentsData.map(treatment => ({
-    ...treatment,
-    name: t(treatment.name),
-    description: t(treatment.description),
-    duration: t(treatment.duration),
-    suitableFor: t(treatment.suitableFor),
-    image: getImageSrc(
-      images.treatments[treatment.imageKey as keyof typeof images.treatments],
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400"
-    )
-  }));
+  const treatments = useMemo(() => 
+    treatmentsData.map(treatment => ({
+      ...treatment,
+      name: t(treatment.name),
+      description: t(treatment.description),
+      duration: t(treatment.duration),
+      suitableFor: t(treatment.suitableFor),
+      image: getImageSrc(
+        images.treatments[treatment.imageKey as keyof typeof images.treatments],
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400"
+      )
+    })), [t]
+  );
 
   return (
     <div className="min-h-screen bg-white">
@@ -44,7 +48,7 @@ const Treatments = () => {
                   className="group cursor-pointer h-full"
                 >
                   <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform group-hover:scale-105 h-full flex flex-col">
-                    <img 
+                    <OptimizedImage 
                       src={treatment.image} 
                       alt={treatment.name}
                       className="w-full h-80 object-cover"
