@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -38,7 +37,7 @@ const The5Elements = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-20">
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white pb-32">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-32">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
@@ -49,8 +48,9 @@ const The5Elements = () => {
               </p>
             </div>
             
-            <div className="space-y-32">
-              {elements.map((element, index) => <div key={index} className="relative group cursor-pointer">
+            <div className="space-y-32 pb-20">
+              {elements.map((element, index) => (
+                <div key={index} className="relative group cursor-pointer">
                   {/* Background Image */}
                   <div className={`absolute inset-0 flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} items-center pointer-events-none`}>
                     <div className="w-[500px] h-[500px] rounded-full overflow-hidden opacity-20 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
@@ -65,7 +65,8 @@ const The5Elements = () => {
                       <p className="text-gray-700 leading-relaxed text-lg">{element.description}</p>
                     </div>
                   </div>
-                </div>)}
+                </div>
+              ))}
             </div>
           </div>
         </section>
