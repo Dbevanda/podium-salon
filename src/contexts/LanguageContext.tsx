@@ -72,7 +72,7 @@ const translations: Translations = {
     en: 'About Podium Zagreb'
   },
   'about.description1': {
-    hr: 'Podium je zagrebački premijerni salon ljepote i wellnessa, gdje kombiniramo snagu jednostavnosti i elegancije s najsuvremenijom Future5 tehnologijom. Naš pristup spaja minimalističke dizajnerske principe s funkcionalnom izvrsnosti kako bismo stvorili iskustva koja su i lijepa i značajna.',
+    hr: 'Podium je zagrebački premijerni salon ljepote i wellnessa, gdje kombiniramo snagu jednostavnosti i elegancije s najsuvremenijom Future5 tehnologijom. Naš pristup spaja minimalističke dizajnerske principle s funkcionalnom izvrsnosti kako bismo stvorili iskustva koja su i lijepa i značajna.',
     en: 'Podium is Zagreb\'s premier beauty and wellness salon, where we combine the power of simplicity and elegance with cutting-edge Future5 technology. Our approach merges minimalist design principles with functional excellence to create experiences that are both beautiful and meaningful.'
   },
   'about.description2': {
@@ -207,6 +207,22 @@ const translations: Translations = {
     hr: 'Tretman za kožu sklonu aknama i post-aknama, kod znakova starenja, hiperpigmentacija, za postizanje iznimnog sjaja',
     en: 'Treatment for acne-prone and post-acne skin, signs of aging, hyperpigmentation, for achieving exceptional radiance'
   },
+  'treatments.brighteningTouch.name': {
+    hr: 'Brightening Touch',
+    en: 'Brightening Touch'
+  },
+  'treatments.brighteningTouch.description': {
+    hr: 'Preporučeno za poboljšanje sjaja kože, hidratacije i teksture',
+    en: 'Recommended for improving skin radiance, hydration and texture'
+  },
+   'treatments.brighteningTouch.duration': {
+    hr: '80 minuta',
+    en: '80 minutes'
+  },
+  'treatments.brighteningTouch.suitableFor': {
+    hr: 'Preporučeno za poboljšanje sjaja kože, hidratacije i teksture',
+    en: 'Recommended for improving skin radiance, hydration and texture'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -316,6 +332,14 @@ const translations: Translations = {
   'treatment.proRenewalPeel.description2': {
     hr: 'Tretman uključuje korištenje seruma i gelova prilagođenih tipu kože, a završava hranjivom kremom koja obnavlja i umiruje kožu. Idealan je za sivu, umornu i neujednačenu kožu kojoj je potrebno osvježenje.',
     en: 'The procedure uses customized serums and gels based on skin type and finishes with a nourishing cream that soothes and restores. Perfect for dull, tired, and uneven skin in need of a refreshing boost.'
+  },
+  'treatment.brighteningTouch.description1': {
+    hr: 'Ovaj tretman usmjeren je na pročišćavanje, posvjetljivanje i dubinsku revitalizaciju kože. Kombinira enzimski piling, serum s posvjetljujućim učinkom, masku bogatu aktivnim sastojcima te opcionalnu upotrebu ultrazvučnog ili galvanic uređaja.',
+    en: 'This facial focuses on purification, brightening, and deep revitalization of the skin. It combines enzymatic peeling, a brightening serum, a nutrient-rich mask, and optional use of an ultrasonic or galvanic device.'
+  },
+  'treatment.brighteningTouch.description2': {
+    hr: 'Tretman završava umirujućom kremom i čini kožu blistavijom, mekšom i ujednačenijom. Idealan je za umornu, neujednačenu ili sivu kožu.',
+    en: 'The treatment ends with a calming cream, leaving the skin radiant, smooth, and more even in tone. Perfect for dull, uneven, or tired skin.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',

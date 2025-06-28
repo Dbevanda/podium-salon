@@ -45,6 +45,17 @@
     "detailDescription2": "treatment.proRenewalPeel.description2"
   },
   {
+    "id": "brightening-touch",
+    "name": "treatments.brighteningTouch.name",
+    "description": "treatments.brighteningTouch.description",
+    "imageKey": "facial",
+    "duration": "treatments.brighteningTouch.duration",
+    "suitableFor": "treatments.brighteningTouch.suitableFor",
+    "price": "$190",
+    "detailDescription1": "treatment.brighteningTouch.description1",
+    "detailDescription2": "treatment.brighteningTouch.description2"
+  },
+  {
     "id": "body-wellness",
     "name": "treatments.body.name",
     "description": "treatments.body.description",
