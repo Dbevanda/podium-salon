@@ -223,6 +223,22 @@ const translations: Translations = {
     hr: 'Preporučeno za poboljšanje sjaja kože, hidratacije i teksture',
     en: 'Recommended for improving skin radiance, hydration and texture'
   },
+  'treatments.sixtyMinutes.name': {
+    hr: '60-Minutes Treatment',
+    en: '60-Minutes Treatment'
+  },
+  'treatments.sixtyMinutes.description': {
+    hr: 'Preporučuje se za normalnu, mješovitu, umornu i sivu kožu, kao i za kožu kojoj je potrebna nježna obnova i blago posvjetljivanje',
+    en: 'Recommended for normal, combination, tired and dull skin, as well as skin that needs gentle renewal and mild brightening'
+  },
+  'treatments.sixtyMinutes.duration': {
+    hr: '60 minuta',
+    en: '60 minutes'
+  },
+  'treatments.sixtyMinutes.suitableFor': {
+    hr: 'Normalna, mješovita, umorna i siva koža koja treba nježnu obnovu',
+    en: 'Normal, combination, tired and dull skin that needs gentle renewal'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -340,6 +356,14 @@ const translations: Translations = {
   'treatment.brighteningTouch.description2': {
     hr: 'Tretman završava umirujućom kremom i čini kožu blistavijom, mekšom i ujednačenijom. Idealan je za umornu, neujednačenu ili sivu kožu.',
     en: 'The treatment ends with a calming cream, leaving the skin radiant, smooth, and more even in tone. Perfect for dull, uneven, or tired skin.'
+  },
+  'treatment.sixtyMinutes.description1': {
+    hr: 'Ovaj tretman kombinira enzimski piling, aktivne serume i umirujuće maske kako bi koža bila dubinski očišćena, revitalizirana i nahranjena. Koristi se Heritage maska s Flash peelingom, nakon čega slijedi hranjiva maska s individualno prilagođenim serumima.',
+    en: 'This facial combines enzymatic peeling, active serums, and soothing masks to deeply cleanse, revitalize, and nourish the skin. The treatment includes a Heritage & Flash exfoliating mask, followed by a hydrating mask with custom-blended serums.'
+  },
+  'treatment.sixtyMinutes.description2': {
+    hr: 'Tretman završava završnom kremom za obnovu kože, ostavljajući je osvježenu, blistaviju i s poboljšanom teksturom. Idealan je za redovitu njegu i održavanje zdravog izgleda kože.',
+    en: 'The treatment ends with a final cream for skin restoration, leaving the skin refreshed, more radiant, and with improved texture. Perfect for regular care and maintaining healthy-looking skin.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',

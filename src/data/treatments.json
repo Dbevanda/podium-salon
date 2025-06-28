@@ -56,6 +56,17 @@
     "detailDescription2": "treatment.brighteningTouch.description2"
   },
   {
+    "id": "60-minutes-treatment",
+    "name": "treatments.sixtyMinutes.name",
+    "description": "treatments.sixtyMinutes.description",
+    "imageKey": "facial",
+    "duration": "treatments.sixtyMinutes.duration",
+    "suitableFor": "treatments.sixtyMinutes.suitableFor",
+    "price": "$160",
+    "detailDescription1": "treatment.sixtyMinutes.description1",
+    "detailDescription2": "treatment.sixtyMinutes.description2"
+  },
+  {
     "id": "body-wellness",
     "name": "treatments.body.name",
     "description": "treatments.body.description",
