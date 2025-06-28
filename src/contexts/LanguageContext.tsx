@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'hr' | 'en';
@@ -159,6 +160,22 @@ const translations: Translations = {
     hr: 'Preporučuje se za masnu kožu izvan ravnoteže, sklonu seboreji i aknama',
     en: 'Recommended for oily skin out of balance, prone to seborrhea and acne'
   },
+  'treatments.wellAging.name': {
+    hr: 'Well-Aging Protocol',
+    en: 'Well-Aging Protocol'
+  },
+  'treatments.wellAging.description': {
+    hr: 'Napredni tretman za kožu koja pokazuje znakove starenja',
+    en: 'Advanced treatment for skin showing signs of aging'
+  },
+  'treatments.wellAging.duration': {
+    hr: '90 minuta',
+    en: '90 minutes'
+  },
+  'treatments.wellAging.suitableFor': {
+    hr: 'Za kožu koja pokazuje znakove starenja',
+    en: 'For skin showing signs of aging'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -244,6 +261,14 @@ const translations: Translations = {
   'treatment.resetDetoxify.description2': {
     hr: 'Idealan je za umornu, začepljenu, neuravnoteženu ili dehidriranu kožu. Tretman završava smirujućom limfnom drenažom i dubinskom njegom.',
     en: 'The treatment ends with soothing lymphatic drainage and intense nourishment for a fresh, radiant glow.'
+  },
+  'treatment.wellAging.description1': {
+    hr: 'Ovaj tretman kombinira dubinsko čišćenje, detoksikaciju i intenzivnu njegu kože pomoću moćnih maski, aktivnih seruma i masaža. Prilagođen je različitim tipovima kože – od dehidrirane do masne i aknama sklone.',
+    en: 'This treatment combines deep cleansing, detox, and intense skin nourishment using powerful masks, active serums, and massage techniques. It\'s tailored to suit various skin types – from dehydrated to oily or acne-prone.'
+  },
+  'treatment.wellAging.description2': {
+    hr: 'Zahvaljujući kombinaciji manuelne masaže, infuzije kamilice i mogućnosti upotrebe ultrazvučnih uređaja, tretman obnavlja kožu, vraća ravnotežu i ostavlja je blistavom, nahranjenom i vidno zaglađenom.',
+    en: 'With a mix of manual massage, chamomile infusion, and optional ultrasonic device use, the treatment restores skin balance, refreshes the complexion, and leaves the face glowing, nourished, and visibly smoother.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',

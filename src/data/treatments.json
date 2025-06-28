@@ -12,25 +12,25 @@
     "detailDescription2": "treatment.resetDetoxify.description2"
   },
   {
+    "id": "well-aging",
+    "name": "treatments.wellAging.name",
+    "description": "treatments.wellAging.description",
+    "imageKey": "antiAging",
+    "duration": "treatments.wellAging.duration",
+    "suitableFor": "treatments.wellAging.suitableFor",
+    "price": "$200",
+    "detailDescription1": "treatment.wellAging.description1",
+    "detailDescription2": "treatment.wellAging.description2"
+  },
+  {
     "id": "body-wellness",
     "name": "treatments.body.name",
     "description": "treatments.body.description",
     "imageKey": "body",
     "duration": "treatments.body.duration",
     "suitableFor": "treatments.body.suitableFor",
-    "price": "$200",
+    "price": "$250",
     "detailDescription1": "treatment.body.description1",
     "detailDescription2": "treatment.body.description2"
-  },
-  {
-    "id": "anti-aging",
-    "name": "treatments.antiAging.name",
-    "description": "treatments.antiAging.description",
-    "imageKey": "antiAging",
-    "duration": "treatments.antiAging.duration",
-    "suitableFor": "treatments.antiAging.suitableFor",
-    "price": "$250",
-    "detailDescription1": "treatment.antiAging.description1",
-    "detailDescription2": "treatment.antiAging.description2"
   }
 ]
