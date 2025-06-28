@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'hr' | 'en';
@@ -144,6 +143,22 @@ const translations: Translations = {
     hr: 'Otkrijte naš asortiman naprednih tretmana dizajniranih da poboljšaju vašu prirodnu ljepotu.',
     en: 'Discover our range of advanced treatments designed to enhance your natural beauty.'
   },
+  'treatments.resetDetoxify.name': {
+    hr: 'Reset & Detoxify Protocol',
+    en: 'Reset & Detoxify Protocol'
+  },
+  'treatments.resetDetoxify.description': {
+    hr: 'Profesionalni tretman za dubinsko čišćenje i balansiranje kože',
+    en: 'Professional treatment for deep cleansing and skin balancing'
+  },
+  'treatments.resetDetoxify.duration': {
+    hr: '75 minuta',
+    en: '75 minutes'
+  },
+  'treatments.resetDetoxify.suitableFor': {
+    hr: 'Preporučuje se za masnu kožu izvan ravnoteže, sklonu seboreji i aknama',
+    en: 'Recommended for oily skin out of balance, prone to seborrhea and acne'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -221,6 +236,14 @@ const translations: Translations = {
   'treatment.notFound': {
     hr: 'Tretman nije pronađen',
     en: 'Treatment not found'
+  },
+  'treatment.resetDetoxify.description1': {
+    hr: 'Ovaj profesionalni tretman nježno ali temeljito čisti kožu, balansira i dubinski hidratizira. Kombinacija detoksikacijskih maski, infuzije kamilice, ultrazvuka i eventualne ekstrakcije pruža koži osvježen izgled i vraća prirodni sjaj.',
+    en: 'This professional facial deeply yet gently cleanses the skin, balances and hydrates it thoroughly. A combination of detox masks, chamomile infusion, ultrasound and optional extractions revives tired, congested, unbalanced or dehydrated skin.'
+  },
+  'treatment.resetDetoxify.description2': {
+    hr: 'Idealan je za umornu, začepljenu, neuravnoteženu ili dehidriranu kožu. Tretman završava smirujućom limfnom drenažom i dubinskom njegom.',
+    en: 'The treatment ends with soothing lymphatic drainage and intense nourishment for a fresh, radiant glow.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',

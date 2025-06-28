@@ -1,15 +1,15 @@
 
 [
   {
-    "id": "facial-rejuvenation",
-    "name": "treatments.facial.name",
-    "description": "treatments.facial.description",
+    "id": "reset-detoxify",
+    "name": "treatments.resetDetoxify.name",
+    "description": "treatments.resetDetoxify.description",
     "imageKey": "facial",
-    "duration": "treatments.facial.duration",
-    "suitableFor": "treatments.facial.suitableFor",
+    "duration": "treatments.resetDetoxify.duration",
+    "suitableFor": "treatments.resetDetoxify.suitableFor",
     "price": "$150",
-    "detailDescription1": "treatment.facial.description1",
-    "detailDescription2": "treatment.facial.description2"
+    "detailDescription1": "treatment.resetDetoxify.description1",
+    "detailDescription2": "treatment.resetDetoxify.description2"
   },
   {
     "id": "body-wellness",
