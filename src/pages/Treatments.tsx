@@ -47,7 +47,7 @@ const Treatments = () => {
                     <img 
                       src={treatment.image} 
                       alt={treatment.name}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-80 object-cover"
                     />
                     <div className="p-6 flex-1 flex flex-col">
                       <h3 className="text-xl font-medium text-gray-900 mb-2">{treatment.name}</h3>
