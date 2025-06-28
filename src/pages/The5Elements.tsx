@@ -40,7 +40,7 @@ const The5Elements = () => {
       <Header />
       <main className="pt-20">
         <section className="py-20 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
                 {t('elements.title')}
@@ -55,14 +55,14 @@ const The5Elements = () => {
                 <div key={index} className="relative">
                   {/* Connection line (except for last element) */}
                   {index < elements.length - 1 && (
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-16 border-l-2 border-dashed border-gray-300 z-10" 
-                         style={{ top: 'calc(100% - 2rem)' }}></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-20 border-l-2 border-dashed border-gray-300 z-10" 
+                         style={{ top: 'calc(100% - 2.5rem)' }}></div>
                   )}
                   
-                  <div className="mb-16 last:mb-0">
+                  <div className="mb-20 last:mb-0 relative">
                     {/* Centered Image */}
-                    <div className="flex justify-center mb-8">
-                      <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                    <div className="flex justify-center mb-12 relative z-20">
+                      <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
                         <img 
                           src={element.image} 
                           alt={element.name}
@@ -71,10 +71,16 @@ const The5Elements = () => {
                       </div>
                     </div>
                     
-                    {/* Alternating Text Content */}
-                    <div className={`max-w-2xl mx-auto text-center ${index % 2 === 1 ? 'lg:text-right' : 'lg:text-left'}`}>
-                      <h3 className="text-2xl lg:text-3xl font-light text-gray-900 mb-4">{element.name}</h3>
-                      <p className="text-gray-700 leading-relaxed text-lg">{element.description}</p>
+                    {/* Overlapping Text Content */}
+                    <div className={`max-w-4xl mx-auto relative -mt-16 z-10 ${
+                      index % 2 === 0 
+                        ? 'lg:text-left lg:pl-40' 
+                        : 'lg:text-right lg:pr-40'
+                    } text-center`}>
+                      <div className="bg-white bg-opacity-95 p-8 rounded-lg shadow-sm">
+                        <h3 className="text-2xl lg:text-3xl font-light text-gray-900 mb-4">{element.name}</h3>
+                        <p className="text-gray-700 leading-relaxed text-lg">{element.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
