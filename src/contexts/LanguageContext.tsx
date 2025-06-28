@@ -191,6 +191,22 @@ const translations: Translations = {
     hr: 'Preporučuje se za osjetljivu kožu pod stresom zbog negativnog učinka urbanog života',
     en: 'Recommended for sensitive skin under stress due to negative effects of urban life'
   },
+  'treatments.proRenewalPeel.name': {
+    hr: 'Pro Renewal Gradual Peel Protocol',
+    en: 'Pro Renewal Gradual Peel Protocol'
+  },
+  'treatments.proRenewalPeel.description': {
+    hr: 'Tretman za kožu sklonu aknama i post-aknama, kod znakova starenja, hiperpigmentacija',
+    en: 'Treatment for acne-prone and post-acne skin, signs of aging, hyperpigmentation'
+  },
+  'treatments.proRenewalPeel.duration': {
+    hr: '90 minuta',
+    en: '90 minutes'
+  },
+  'treatments.proRenewalPeel.suitableFor': {
+    hr: 'Tretman za kožu sklonu aknama i post-aknama, kod znakova starenja, hiperpigmentacija, za postizanje iznimnog sjaja',
+    en: 'Treatment for acne-prone and post-acne skin, signs of aging, hyperpigmentation, for achieving exceptional radiance'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -292,6 +308,14 @@ const translations: Translations = {
   'treatment.deactivateStress.description2': {
     hr: 'Završava relaksirajućom masažom, maskom prema tipu kože i preporučenom limfnom drenažom za dodatni drenažni i umirujući učinak. Idealno za sve tipove kože, posebno umornu i dehidriranu.',
     en: 'It ends with a relaxing massage, a customized mask, and optional lymphatic drainage for extra soothing and drainage benefits. Perfect for all skin types, especially tired or dehydrated skin.'
+  },
+  'treatment.proRenewalPeel.description1': {
+    hr: 'Ovaj tretman kombinira nježno, ali učinkovito čišćenje s enzimskim pilingom, dubinskom hidratacijom i revitalizacijom kože. Posebna pažnja posvećuje se i njezi područja oko očiju.',
+    en: 'This treatment combines gentle yet effective cleansing with enzymatic peeling, deep hydration, and skin revitalization. Special care is also given to the delicate eye area.'
+  },
+  'treatment.proRenewalPeel.description2': {
+    hr: 'Tretman uključuje korištenje seruma i gelova prilagođenih tipu kože, a završava hranjivom kremom koja obnavlja i umiruje kožu. Idealan je za sivu, umornu i neujednačenu kožu kojoj je potrebno osvježenje.',
+    en: 'The procedure uses customized serums and gels based on skin type and finishes with a nourishing cream that soothes and restores. Perfect for dull, tired, and uneven skin in need of a refreshing boost.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',

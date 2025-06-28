@@ -34,6 +34,17 @@
     "detailDescription2": "treatment.deactivateStress.description2"
   },
   {
+    "id": "pro-renewal-peel",
+    "name": "treatments.proRenewalPeel.name",
+    "description": "treatments.proRenewalPeel.description",
+    "imageKey": "facial",
+    "duration": "treatments.proRenewalPeel.duration",
+    "suitableFor": "treatments.proRenewalPeel.suitableFor",
+    "price": "$220",
+    "detailDescription1": "treatment.proRenewalPeel.description1",
+    "detailDescription2": "treatment.proRenewalPeel.description2"
+  },
+  {
     "id": "body-wellness",
     "name": "treatments.body.name",
     "description": "treatments.body.description",
