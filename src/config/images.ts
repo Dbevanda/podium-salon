@@ -13,11 +13,11 @@ export const images = {
     hero: '/images/home/podium-salon.jpg', // Replace with your image
   },
   
-  // Treatment images
+  // Treatment images - using working placeholder URLs
   treatments: {
-    facial: '/images/treatments/facial-rejuvenation.jpg', // Replace with your image
-    body: '/images/treatments/body-wellness.jpg', // Replace with your image
-    antiAging: '/images/treatments/anti-aging.jpg', // Replace with your image
+    facial: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&h=400',
+    body: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400',
+    antiAging: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=400',
   },
   
   // 5 Elements images
