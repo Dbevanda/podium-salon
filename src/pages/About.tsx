@@ -27,6 +27,7 @@ const About = () => {
           alt="Premium cosmetic textures"
           className="w-full h-full object-cover opacity-50"
           loading="eager"
+          fallback="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
         />
       </div>
       
