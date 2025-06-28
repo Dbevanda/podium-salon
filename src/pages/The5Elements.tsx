@@ -10,7 +10,7 @@ const The5Elements = () => {
     { 
       name: "PURIFICATION", 
       description: "For Purification, we selected ingredients that can gently cleanse the skin, remove impurities, exfoliate dead cells, calm skin irritation, eliminate harmful bacteria, and heal burns and wounds. Among the key ingredients supporting this element are Saponaria Officinalis (Soapwort), Green French clay, Great Burdock, Brewer's Yeast, and Mimosa Bark.",
-      image: "/lovable-uploads/79dd37f0-408c-4672-87f6-ade1644dc242.png"
+      image: "/lovable-uploads/1039290a-0c24-47bd-b9b6-16d406f80467.png"
     },
     { 
       name: "STIMULATION", 
@@ -20,7 +20,7 @@ const The5Elements = () => {
     { 
       name: "HYDRATION", 
       description: "For Hydration, we selected ingredients that can work on two significant aspects of skin moisture: attracting moisture and delivering it to the skin and retaining the skin's moisture, protecting it from hydration loss. Among the ingredients that support this element: Silk Amino acids, Algae, Milk protein, and Honey.",
-      image: "/lovable-uploads/1039290a-0c24-47bd-b9b6-16d406f80467.png"
+      image: "/lovable-uploads/79dd37f0-408c-4672-87f6-ade1644dc242.png"
     },
     { 
       name: "NOURISHMENT", 
@@ -49,12 +49,14 @@ const The5Elements = () => {
               </p>
             </div>
             
-            <div className="relative">
+            <div className="space-y-32">
               {elements.map((element, index) => (
-                <div key={index} className="mb-20 last:mb-0 relative">
-                  {/* Centered Image */}
-                  <div className="flex justify-center mb-12 relative z-20">
-                    <div className="w-80 h-80 rounded-full overflow-hidden shadow-lg">
+                <div key={index} className="relative">
+                  {/* Background Image */}
+                  <div className={`absolute inset-0 flex ${
+                    index % 2 === 0 ? 'justify-start' : 'justify-end'
+                  } items-center pointer-events-none`}>
+                    <div className="w-96 h-96 rounded-full overflow-hidden opacity-20">
                       <img 
                         src={element.image} 
                         alt={element.name}
@@ -63,14 +65,14 @@ const The5Elements = () => {
                     </div>
                   </div>
                   
-                  {/* Overlapping Text Content */}
-                  <div className={`max-w-4xl mx-auto relative -mt-16 z-10 ${
+                  {/* Text Content */}
+                  <div className={`relative z-10 max-w-2xl ${
                     index % 2 === 0 
-                      ? 'lg:text-left lg:pl-40' 
-                      : 'lg:text-right lg:pr-40'
-                  } text-center`}>
-                    <div className="bg-white bg-opacity-95 p-8 rounded-lg shadow-sm">
-                      <h3 className="text-2xl lg:text-3xl font-light text-gray-900 mb-4">{element.name}</h3>
+                      ? 'ml-auto text-right' 
+                      : 'mr-auto text-left'
+                  }`}>
+                    <div className="bg-white bg-opacity-95 p-12 rounded-lg shadow-sm">
+                      <h3 className="text-2xl lg:text-3xl font-light text-gray-900 mb-6">{element.name}</h3>
                       <p className="text-gray-700 leading-relaxed text-lg">{element.description}</p>
                     </div>
                   </div>
