@@ -69,6 +69,17 @@ const TreatmentDetail = () => {
                     {t(treatment.detailDescription2)}
                   </p>
                 </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">{t('treatments.duration')}</h3>
+                    <p className="text-gray-600">{t(treatment.duration)}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">{t('treatments.suitable')}</h3>
+                    <p className="text-gray-600">{t(treatment.suitableFor)}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
