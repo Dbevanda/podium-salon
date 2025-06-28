@@ -10,8 +10,13 @@ const Header = () => {
   const { t } = useLanguage();
 
   return (
-    <header className="fixed top-0 left-0 right-0 backdrop-blur-sm border-b border-gray-200 z-50" style={{ backgroundColor: '#FCFBFA' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 backdrop-blur-sm border-b border-transparent z-50 transition-all duration-300 hover:border-gray-200 group" 
+            style={{ backgroundColor: 'transparent' }}>
+      <div 
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        style={{ backgroundColor: '#FCFBFA' }}
+      />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <div className="flex-shrink-0">
