@@ -1,7 +1,6 @@
 
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { images, getImageSrc } from '@/config/images';
 
 const AboutTextContent = () => {
   const [showMore, setShowMore] = useState(false);
@@ -13,20 +12,7 @@ const AboutTextContent = () => {
         {t('about.title')}
       </h1>
       
-      <div className="relative">
-        {/* First embedded image - float left */}
-        <div className="float-left mr-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-          <img 
-            src={getImageSrc(images.about.treatmentRoom)}
-            alt="Treatment Room"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = '/placeholder.svg';
-            }}
-          />
-        </div>
-        
+      <div className="space-y-4">
         <p className="text-gray-600 leading-relaxed">
           {t('about.description1')}
         </p>
@@ -37,30 +23,15 @@ const AboutTextContent = () => {
       
       {showMore && (
         <div className="space-y-4">
-          <div className="relative">
-            {/* Second embedded image - float right */}
-            <div className="float-right ml-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
-              <img 
-                src={getImageSrc(images.about.wellnessArea)}
-                alt="Wellness Area"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = '/placeholder.svg';
-                }}
-              />
-            </div>
-            
-            <p className="text-gray-600 leading-relaxed">
-              {t('about.description3')}
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              {t('about.description4')}
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              {t('about.description5')}
-            </p>
-          </div>
+          <p className="text-gray-600 leading-relaxed">
+            {t('about.description3')}
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            {t('about.description4')}
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            {t('about.description5')}
+          </p>
         </div>
       )}
       
