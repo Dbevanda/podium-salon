@@ -1,15 +1,15 @@
 
 [
   {
-    "id": "reset-detoxify",
-    "name": "treatments.resetDetoxify.name",
-    "description": "treatments.resetDetoxify.description",
-    "imageKey": "resetDetoxify",
-    "duration": "treatments.resetDetoxify.duration",
-    "suitableFor": "treatments.resetDetoxify.suitableFor",
-    "price": "$150",
-    "detailDescription1": "treatment.resetDetoxify.description1",
-    "detailDescription2": "treatment.resetDetoxify.description2"
+    "id": "60-minutes-treatment",
+    "name": "treatments.sixtyMinutes.name",
+    "description": "treatments.sixtyMinutes.description",
+    "imageKey": "sixtyMinutes",
+    "duration": "treatments.sixtyMinutes.duration",
+    "suitableFor": "treatments.sixtyMinutes.suitableFor",
+    "price": "$160",
+    "detailDescription1": "treatment.sixtyMinutes.description1",
+    "detailDescription2": "treatment.sixtyMinutes.description2"
   },
   {
     "id": "well-aging",
@@ -56,14 +56,14 @@
     "detailDescription2": "treatment.brighteningTouch.description2"
   },
   {
-    "id": "60-minutes-treatment",
-    "name": "treatments.sixtyMinutes.name",
-    "description": "treatments.sixtyMinutes.description",
-    "imageKey": "sixtyMinutes",
-    "duration": "treatments.sixtyMinutes.duration",
-    "suitableFor": "treatments.sixtyMinutes.suitableFor",
-    "price": "$160",
-    "detailDescription1": "treatment.sixtyMinutes.description1",
-    "detailDescription2": "treatment.sixtyMinutes.description2"
+    "id": "reset-detoxify",
+    "name": "treatments.resetDetoxify.name",
+    "description": "treatments.resetDetoxify.description",
+    "imageKey": "resetDetoxify",
+    "duration": "treatments.resetDetoxify.duration",
+    "suitableFor": "treatments.resetDetoxify.suitableFor",
+    "price": "$150",
+    "detailDescription1": "treatment.resetDetoxify.description1",
+    "detailDescription2": "treatment.resetDetoxify.description2"
   }
 ]
