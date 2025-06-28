@@ -17,8 +17,8 @@ const translations: Translations = {
     en: 'Treatments'
   },
   'nav.elements': {
-    hr: '5 elemenata',
-    en: 'The 5 elements'
+    hr: '5 Elemenata',
+    en: 'The 5 Elements'
   },
   'nav.about': {
     hr: 'O nama',
@@ -39,15 +39,15 @@ const translations: Translations = {
     en: 'Premium Beauty & Wellness'
   },
   'hero.description': {
-    hr: 'Doživite budućnost ljepote s našim ekskluzivnim Future5 tretmanima i holističkim wellness rješenjima. Otkrijte premium beauty usluge u najelegantijem salonu Zagreba, gdje se drevna mudrost susreće s modernim inovacijama.',
-    en: 'Experience the future of beauty with our exclusive Future5 treatments and holistic wellness solutions. Discover premium beauty services in Zagreb\'s most elegant salon, where ancient wisdom meets modern innovation.'
+    hr: 'Doživite budućnost ljepote s našim ekskluzivnim Future5 tretmanima. Otkrijte premium beauty usluge u najelegantijem salonu Zagreba, gdje se drevna mudrost susreće s modernim inovacijama.',
+    en: 'Experience the future of beauty with our exclusive Future5 treatments. Discover premium beauty services in Zagreb\'s most elegant salon, where ancient wisdom meets modern innovation.'
   },
   'hero.specializing': {
     hr: 'Specijalizirani za:',
     en: 'Specializing in:'
   },
   'hero.specialties': {
-    hr: 'Future5 Tehnologija • Filozofija 5 elemenata • Napredna njega kože',
+    hr: 'Future5 Tehnologija • Napredna njega kože',
     en: 'Future5 Technology • 5 Elements Philosophy • Advanced Skincare'
   },
   'hero.location': {
@@ -85,12 +85,12 @@ const translations: Translations = {
     en: 'Our expert team at Podium Zagreb consists of experienced professionals who are passionate about delivering exceptional Future5 treatment results. We take pride in our personalized approach, ensuring that each client receives the attention and care they deserve in our premium Zagreb location.'
   },
   'about.description4': {
-    hr: 'S godinama iskustva u industriji ljepote i wellnessa, salon Podium je razvio inovativne Future5 tretmane i tehnike koje nas izdvajaju od drugih zagrebačkih salona ljepote. Naša predanost kontinuiranom učenju i poboljšanju pokreće nas da ostanemo na čelu razvoja industrije.',
-    en: 'With years of experience in the beauty and wellness industry, Podium salon has developed innovative Future5 treatments and techniques that set us apart from other Zagreb beauty salons. Our commitment to continuous learning and improvement drives us to stay at the forefront of industry developments.'
+    hr: 'S godinama iskustva u industriji ljepote i wellnessa, salon Podium je razvio tehnike koje nas izdvajaju od drugih zagrebačkih salona ljepote.',
+    en: 'With years of experience in the beauty and wellness industry, Podium salon has developed techniques that set us apart from other Zagreb beauty salons.'
   },
   'about.description5': {
-    hr: 'Vjerujemo da prava ljepota dolazi iznutra, a naš holistički pristup 5 elemenata bavi se i fizičkim i emocionalnim aspektima wellnessa. Naš cilj u Podium Zagrebu je pomoći vam da se osjećate samopouzdano, osvježeno i revitalizirano kroz naše premium Future5 tretmane.',
-    en: 'We believe that true beauty comes from within, and our holistic 5 elements approach addresses both the physical and emotional aspects of wellness. Our goal at Podium Zagreb is to help you feel confident, refreshed, and revitalized through our premium Future5 treatments.'
+    hr: 'Vjerujemo da prava ljepota dolazi iznutra, a naš pristup bavi se i fizičkim i emocionalnim aspektima wellnessa. Naš cilj u Podium Zagrebu je pomoći vam da se osjećate samopouzdano, osvježeno i revitalizirano kroz naše tretmane.',
+    en: 'We believe that true beauty comes from within, and our approach addresses both the physical and emotional aspects of wellness. Our goal at Podium Zagreb is to help you feel confident, refreshed, and revitalized through our treatments.'
   },
   'about.readMore': {
     hr: 'Pročitajte više o Podiumu',
@@ -169,7 +169,7 @@ const translations: Translations = {
   
   // Treatment detail pages
   'treatment.backToTreatments': {
-    hr: 'Povratak na tretmane',
+    hr: 'Povratak',
     en: 'Back to Treatments'
   },
   'treatment.description': {
@@ -227,12 +227,12 @@ const translations: Translations = {
     en: 'Email: hello@podium.com'
   },
   'contact.phone': {
-    hr: 'Telefon: +1 (555) 123-4567',
-    en: 'Phone: +1 (555) 123-4567'
+    hr: 'Telefon: +385 98-1967-172',
+    en: 'Phone: +385 98-1967-172'
   },
   'contact.address': {
-    hr: 'Adresa: 123 Design Street, City, State 12345',
-    en: 'Address: 123 Design Street, City, State 12345'
+    hr: 'Adresa: Ulica Jurja Žerjavića 9, Zagreb, Hrvatska',
+    en: 'Address: Jurja Žerjavića 9 Street, Zagreb, Croatia'
   },
   'contact.form.name': {
     hr: 'Vaše ime',
