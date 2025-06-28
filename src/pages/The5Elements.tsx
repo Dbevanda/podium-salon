@@ -8,28 +8,28 @@ const The5Elements = () => {
 
   const elements = [
     { 
-      name: "PURIFICATION", 
-      description: "For Purification, we selected ingredients that can gently cleanse the skin, remove impurities, exfoliate dead cells, calm skin irritation, eliminate harmful bacteria, and heal burns and wounds. Among the key ingredients supporting this element are Saponaria Officinalis (Soapwort), Green French clay, Great Burdock, Brewer's Yeast, and Mimosa Bark.",
+      name: t('elements.purification.name'),
+      description: t('elements.purification.description'),
       image: "/lovable-uploads/1039290a-0c24-47bd-b9b6-16d406f80467.png"
     },
     { 
-      name: "STIMULATION", 
-      description: "For Stimulation, our key ingredients encourage oxygen supply to the skin by enhancing blood circulation and lymphatic function. Among these ingredients supporting this element, you may find Centella Asiatica, Cinnamon, Arnica Montana, Clove, and Coffee.",
+      name: t('elements.stimulation.name'),
+      description: t('elements.stimulation.description'),
       image: "/lovable-uploads/cf5029f9-2a5e-4b11-9100-477afe6ec2c0.png"
     },
     { 
-      name: "HYDRATION", 
-      description: "For Hydration, we selected ingredients that can work on two significant aspects of skin moisture: attracting moisture and delivering it to the skin and retaining the skin's moisture, protecting it from hydration loss. Among the ingredients that support this element: Silk Amino acids, Algae, Milk protein, and Honey.",
+      name: t('elements.hydration.name'),
+      description: t('elements.hydration.description'),
       image: "/lovable-uploads/79dd37f0-408c-4672-87f6-ade1644dc242.png"
     },
     { 
-      name: "NOURISHMENT", 
-      description: "For Nourishment, we selected ingredients that can provide the skin with essential vitamins, fatty acids, minerals, and antioxidants required for the skin's long-term health. Among these ingredients, you may find Jojoba oil, Vitamin F, Rosehip oil, and Evening Primrose oil.",
+      name: t('elements.nourishment.name'),
+      description: t('elements.nourishment.description'),
       image: "/lovable-uploads/5e04e400-e0e5-4092-9334-b1c4741a54c6.png"
     },
     { 
-      name: "PROTECTION", 
-      description: "For Protection, we work with ingredients that support the long-term balance of healthy skin, detoxify it, and prevent external effects that may damage it. Among the ingredients that we include in our products to support this element are Squalene/ Squalane, Vitamin C, Green Tea, Red Vine, and Hibiscus.",
+      name: t('elements.protection.name'),
+      description: t('elements.protection.description'),
       image: "/lovable-uploads/390e4043-c6c1-4a57-860f-41bbc2d3a3f7.png"
     }
   ];
@@ -45,7 +45,7 @@ const The5Elements = () => {
                 {t('elements.title')}
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Our skincare philosophy is built around five essential elements that work together to provide comprehensive skin health and beauty enhancement.
+                {t('elements.description')}
               </p>
             </div>
             
@@ -56,7 +56,7 @@ const The5Elements = () => {
                   <div className={`absolute inset-0 flex ${
                     index % 2 === 0 ? 'justify-start' : 'justify-end'
                   } items-center pointer-events-none`}>
-                    <div className="w-96 h-96 rounded-full overflow-hidden opacity-20 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="w-[500px] h-[500px] rounded-full overflow-hidden opacity-20 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
                       <img 
                         src={element.image} 
                         alt={element.name}

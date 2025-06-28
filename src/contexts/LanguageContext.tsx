@@ -257,28 +257,48 @@ const translations: Translations = {
     en: 'The 5 Elements'
   },
   'elements.description': {
-    hr: 'Naša filozofija ukorijenjena je u drevnoj mudrosti pet elemenata, stvarajući sklad između prirode i ljepote kroz principe tradicionalne kineske medicine.',
-    en: 'Our philosophy is rooted in the ancient wisdom of the five elements, creating harmony between nature and beauty through Traditional Chinese Medicine principles.'
+    hr: 'Naša filozofija njege kože izgrađena je oko pet osnovnih elemenata koji rade zajedno kako bi pružili sveobuhvatno zdravlje kože i poboljšanje ljepote.',
+    en: 'Our skincare philosophy is built around five essential elements that work together to provide comprehensive skin health and beauty enhancement.'
   },
-  'elements.wood.description': {
-    hr: 'Proljeće. Istok. Rast. Ekspanzija. Vizija. Benevolencija. Fleksibilnost. Kreativnost. Strpljenje. Rođenje. Mladost. Optimizam. Suosjećanje. Mašta. Velikodušnost. Vodstvo. Pionirstvo. Natjecanje.',
-    en: 'Spring. East. Growth. Expansion. Vision. Benevolence. Flexibility. Creativity. Patience. Birth. Youth. Optimism. Compassion. Imagination. Generosity. Leadership. Pioneering. Competition.'
+  'elements.purification.name': {
+    hr: 'PROČIŠĆAVANJE',
+    en: 'PURIFICATION'
   },
-  'elements.fire.description': {
-    hr: 'Ljeto. Jug. Radost. Toplina. Entuzijazam. Strast. Komunikacija. Karizma. Ljubav. Smijeh. Kreativnost. Duhovnost. Intuicija. Svjesnost. Transformacija. Izražavanje.',
-    en: 'Summer. South. Joy. Warmth. Enthusiasm. Passion. Communication. Charisma. Love. Laughter. Creativity. Spirituality. Intuition. Awareness. Transformation. Expression.'
+  'elements.purification.description': {
+    hr: 'Za pročišćavanje, odabrali smo sastojke koji mogu nježno očistiti kožu, ukloniti nečistoće, eksfolirati mrtve stanice, umiriti iritaciju kože, eliminirati štetne bakterije i liječiti opekline i rane. Među ključnim sastojcima koji podržavaju ovaj element su Saponaria Officinalis (sapunica), zelena francuska glina, veliki čičak, pivski kvasac i mimoza kora.',
+    en: 'For Purification, we selected ingredients that can gently cleanse the skin, remove impurities, exfoliate dead cells, calm skin irritation, eliminate harmful bacteria, and heal burns and wounds. Among the key ingredients supporting this element are Saponaria Officinalis (Soapwort), Green French clay, Great Burdock, Brewer\'s Yeast, and Mimosa Bark.'
   },
-  'elements.earth.description': {
-    hr: 'Kasno ljeto. Centar. Stabilnost. Uzemljenje. Njega. Podrška. Promišljenost. Praktičnost. Pouzdanost. Simpatija. Pravednost. Žetva. Obilje. Prihvaćanje. Kontemplacija.',
-    en: 'Late Summer. Center. Stability. Grounding. Nurturing. Support. Thoughtfulness. Practicality. Reliability. Sympathy. Fairness. Harvest. Abundance. Acceptance. Contemplation.'
+  'elements.stimulation.name': {
+    hr: 'STIMULACIJA',
+    en: 'STIMULATION'
   },
-  'elements.metal.description': {
-    hr: 'Jesen. Zapad. Žalost. Puštanje. Poštovanje. Čistoća. Preciznost. Organizacija. Struktura. Kvaliteta. Rafiniranost. Razlučivanje. Disciplina. Učinkovitost. Red. Završetak.',
-    en: 'Autumn. West. Grief. Letting go. Respect. Purity. Precision. Organization. Structure. Quality. Refinement. Discernment. Discipline. Efficiency. Order. Completion.'
+  'elements.stimulation.description': {
+    hr: 'Za stimulaciju, naši ključni sastojci potiču opskrbu kože kisikom poboljšanjem cirkulacije krvi i limfne funkcije. Među ovim sastojcima koji podržavaju ovaj element možete pronaći Centella Asiatica, cimet, Arnica Montana, klinčić i kavu.',
+    en: 'For Stimulation, our key ingredients encourage oxygen supply to the skin by enhancing blood circulation and lymphatic function. Among these ingredients supporting this element, you may find Centella Asiatica, Cinnamon, Arnica Montana, Clove, and Coffee.'
   },
-  'elements.water.description': {
-    hr: 'Zima. Sjever. Strah. Snaga volje. Mudrost. Introspekcija. Razmišljanje. Skladištenje. Konzervacija. Izdržljivost. Odlučnost. Ambicija. Rezerviranost. Dubina. Tajanstvenost. Potencijal.',
-    en: 'Winter. North. Fear. Will power. Wisdom. Introspection. Reflection. Storage. Conservation. Endurance. Determination. Ambition. Reserved. Deep. Mysterious. Potential.'
+  'elements.hydration.name': {
+    hr: 'HIDRATACIJA',
+    en: 'HYDRATION'
+  },
+  'elements.hydration.description': {
+    hr: 'Za hidrataciju, odabrali smo sastojke koji mogu raditi na dva značajna aspekta vlažnosti kože: privlačenje vlage i dostavljanje je koži te zadržavanje vlage kože, štiteći je od gubitka hidratacije. Među sastojcima koji podržavaju ovaj element: aminokiseline svile, alge, proteini mlijeka i med.',
+    en: 'For Hydration, we selected ingredients that can work on two significant aspects of skin moisture: attracting moisture and delivering it to the skin and retaining the skin\'s moisture, protecting it from hydration loss. Among the ingredients that support this element: Silk Amino acids, Algae, Milk protein, and Honey.'
+  },
+  'elements.nourishment.name': {
+    hr: 'HRANJENJE',
+    en: 'NOURISHMENT'
+  },
+  'elements.nourishment.description': {
+    hr: 'Za hranjenje, odabrali smo sastojke koji mogu koži pružiti esencijalne vitamine, masne kiseline, minerale i antioksidanse potrebne za dugoročno zdravlje kože. Među ovim sastojcima možete pronaći jojoba ulje, vitamin F, ulje šipka i ulje noćurka.',
+    en: 'For Nourishment, we selected ingredients that can provide the skin with essential vitamins, fatty acids, minerals, and antioxidants required for the skin\'s long-term health. Among these ingredients, you may find Jojoba oil, Vitamin F, Rosehip oil, and Evening Primrose oil.'
+  },
+  'elements.protection.name': {
+    hr: 'ZAŠTITA',
+    en: 'PROTECTION'
+  },
+  'elements.protection.description': {
+    hr: 'Za zaštitu, radimo sa sastojcima koji podržavaju dugoročnu ravnotežu zdrave kože, detoksificiraju je i sprječavaju vanjske utjecaje koji je mogu oštetiti. Među sastojcima koje uključujemo u naše proizvode za podršku ovog elementa su skvalen/skvalan, vitamin C, zeleni čaj, crvena loza i hibiskus.',
+    en: 'For Protection, we work with ingredients that support the long-term balance of healthy skin, detoxify it, and prevent external effects that may damage it. Among the ingredients that we include in our products to support this element are Squalene/ Squalane, Vitamin C, Green Tea, Red Vine, and Hibiscus.'
   },
   
   // Footer
