@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { images, getImageSrc } from "@/config/images";
@@ -13,7 +12,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/aae7982a-6aad-41a8-91d5-b081abca6cb1.png"
           alt="Premium cosmetic textures"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-50"
         />
       </div>
       
