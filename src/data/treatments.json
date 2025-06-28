@@ -23,6 +23,17 @@
     "detailDescription2": "treatment.wellAging.description2"
   },
   {
+    "id": "deactivate-stress",
+    "name": "treatments.deactivateStress.name",
+    "description": "treatments.deactivateStress.description",
+    "imageKey": "facial",
+    "duration": "treatments.deactivateStress.duration",
+    "suitableFor": "treatments.deactivateStress.suitableFor",
+    "price": "$180",
+    "detailDescription1": "treatment.deactivateStress.description1",
+    "detailDescription2": "treatment.deactivateStress.description2"
+  },
+  {
     "id": "body-wellness",
     "name": "treatments.body.name",
     "description": "treatments.body.description",

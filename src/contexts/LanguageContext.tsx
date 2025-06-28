@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'hr' | 'en';
@@ -176,6 +175,22 @@ const translations: Translations = {
     hr: 'Za kožu koja pokazuje znakove starenja',
     en: 'For skin showing signs of aging'
   },
+  'treatments.deactivateStress.name': {
+    hr: 'Deactivate Stress Protocol',
+    en: 'Deactivate Stress Protocol'
+  },
+  'treatments.deactivateStress.description': {
+    hr: 'Cjeloviti tretman za umiravanje i revitalizaciju kože pod stresom',
+    en: 'Complete treatment for calming and revitalizing stressed skin'
+  },
+  'treatments.deactivateStress.duration': {
+    hr: '85 minuta',
+    en: '85 minutes'
+  },
+  'treatments.deactivateStress.suitableFor': {
+    hr: 'Preporučuje se za osjetljivu kožu pod stresom zbog negativnog učinka urbanog života',
+    en: 'Recommended for sensitive skin under stress due to negative effects of urban life'
+  },
   'treatments.facial.name': {
     hr: 'Pomlađivanje lica',
     en: 'Facial Rejuvenation'
@@ -269,6 +284,14 @@ const translations: Translations = {
   'treatment.wellAging.description2': {
     hr: 'Zahvaljujući kombinaciji manuelne masaže, infuzije kamilice i mogućnosti upotrebe ultrazvučnih uređaja, tretman obnavlja kožu, vraća ravnotežu i ostavlja je blistavom, nahranjenom i vidno zaglađenom.',
     en: 'With a mix of manual massage, chamomile infusion, and optional ultrasonic device use, the treatment restores skin balance, refreshes the complexion, and leaves the face glowing, nourished, and visibly smoother.'
+  },
+  'treatment.deactivateStress.description1': {
+    hr: 'Ovaj tretman pruža cjelovitu njegu kože kroz nježno čišćenje, detoksikaciju i dubinsku hidrataciju. Koriste se hranjive maske, serum s antioksidansima i Golden Touch Oil za poboljšanje elastičnosti i sjaja kože.',
+    en: 'This treatment offers complete skin care through gentle cleansing, detoxification, and deep hydration. Nourishing masks, antioxidant serums, and Golden Touch Oil help boost elasticity and glow.'
+  },
+  'treatment.deactivateStress.description2': {
+    hr: 'Završava relaksirajućom masažom, maskom prema tipu kože i preporučenom limfnom drenažom za dodatni drenažni i umirujući učinak. Idealno za sve tipove kože, posebno umornu i dehidriranu.',
+    en: 'It ends with a relaxing massage, a customized mask, and optional lymphatic drainage for extra soothing and drainage benefits. Perfect for all skin types, especially tired or dehydrated skin.'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',
