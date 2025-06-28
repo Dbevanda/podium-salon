@@ -40,11 +40,11 @@ Create the following folders in `/public/images/`:
    - `anti-aging.jpg` - Anti-aging therapy image
 
    **5 Elements Page:**
-   - `wood.jpg` - Wood element image
-   - `fire.jpg` - Fire element image
-   - `earth.jpg` - Earth element image
-   - `metal.jpg` - Metal element image
-   - `water.jpg` - Water element image
+   - `purification.jpg` - Purification element image
+   - `stimulation.jpg` - Stimulation element image
+   - `hydration.jpg` - Hydration element image
+   - `nourishment.jpg` - Nourishment element image
+   - `protection.jpg` - Protection element image
 
 3. **Image Requirements:**
    - Use `.jpg`, `.png`, or `.webp` formats

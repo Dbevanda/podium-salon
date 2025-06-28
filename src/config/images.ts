@@ -22,11 +22,11 @@ export const images = {
   
   // 5 Elements images
   elements: {
-    wood: '/images/elements/wood.jpg', // Replace with your image
-    fire: '/images/elements/fire.jpg', // Replace with your image
-    earth: '/images/elements/earth.jpg', // Replace with your image
-    metal: '/images/elements/metal.jpg', // Replace with your image
-    water: '/images/elements/water.jpg', // Replace with your image
+    purification: '/images/elements/purification.jpg', // Replace with your image
+    stimulation: '/images/elements/stimulation.jpg', // Replace with your image
+    hydration: '/images/elements/hydration.jpg', // Replace with your image
+    nourishment: '/images/elements/nourishment.jpg', // Replace with your image
+    protection: '/images/elements/protection.jpg', // Replace with your image
   }
 };
 
