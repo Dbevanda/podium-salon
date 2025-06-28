@@ -39,14 +39,23 @@ const TreatmentDetail = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-20">
-        <section className="py-20 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Link to="/treatments" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8">
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <Link to="/treatments" className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8 relative z-10">
               <ArrowLeft size={20} className="mr-2" />
               {t('treatment.backToTreatments')}
             </Link>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Large background image */}
+            <div className="absolute top-0 right-0 w-2/3 h-full">
+              <img 
+                src={imageUrl}
+                alt={t(treatment.name)}
+                className="w-full h-full object-cover opacity-20"
+              />
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
               <div>
                 <img 
                   src={imageUrl}
@@ -55,7 +64,7 @@ const TreatmentDetail = () => {
                 />
               </div>
               
-              <div>
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6">
                 <h1 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
                   {t(treatment.name)}
                 </h1>
