@@ -51,12 +51,12 @@ const The5Elements = () => {
             
             <div className="space-y-32">
               {elements.map((element, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative group cursor-pointer">
                   {/* Background Image */}
                   <div className={`absolute inset-0 flex ${
                     index % 2 === 0 ? 'justify-start' : 'justify-end'
                   } items-center pointer-events-none`}>
-                    <div className="w-96 h-96 rounded-full overflow-hidden opacity-20">
+                    <div className="w-96 h-96 rounded-full overflow-hidden opacity-20 group-hover:opacity-100 transition-opacity duration-500">
                       <img 
                         src={element.image} 
                         alt={element.name}
@@ -71,7 +71,7 @@ const The5Elements = () => {
                       ? 'ml-auto text-right' 
                       : 'mr-auto text-left'
                   }`}>
-                    <div className="bg-white bg-opacity-95 p-12 rounded-lg shadow-sm">
+                    <div className="bg-white bg-opacity-95 p-12 rounded-lg shadow-sm group-hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-2xl lg:text-3xl font-light text-gray-900 mb-6">{element.name}</h3>
                       <p className="text-gray-700 leading-relaxed text-lg">{element.description}</p>
                     </div>
