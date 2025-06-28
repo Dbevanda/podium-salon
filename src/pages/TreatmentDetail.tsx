@@ -19,9 +19,9 @@ const TreatmentDetail = () => {
         <Header />
         <main className="pt-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <h1 className="text-3xl font-light text-gray-900 mb-4">Treatment not found</h1>
+            <h1 className="text-3xl font-light text-gray-900 mb-4">{t('treatment.notFound')}</h1>
             <Link to="/treatments" className="text-blue-600 hover:text-blue-800">
-              Back to Treatments
+              {t('treatment.backToTreatments')}
             </Link>
           </div>
         </main>

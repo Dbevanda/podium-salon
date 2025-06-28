@@ -22,7 +22,7 @@ const translations: Translations = {
   },
   'nav.about': {
     hr: 'O nama',
-    en: 'About us'
+    en: 'About us'  
   },
   'nav.contact': {
     hr: 'Kontakt',
@@ -99,6 +99,40 @@ const translations: Translations = {
   'about.readLess': {
     hr: 'Pročitajte manje',
     en: 'Read Less'
+  },
+  
+  // Services page
+  'services.title': {
+    hr: 'Naše usluge',
+    en: 'Our Services'
+  },
+  'services.description': {
+    hr: 'Nudimo niz usluga osmišljenih da vam pomognemo stvoriti nešto lijepo i funkcionalno.',
+    en: 'We offer a range of services designed to help you create something beautiful and functional.'
+  },
+  'services.design.title': {
+    hr: 'Dizajn',
+    en: 'Design'
+  },
+  'services.design.description': {
+    hr: 'Minimalistička i elegantna dizajnerska rješenja koja se fokusiraju na korisničko iskustvo i estetsku privlačnost.',
+    en: 'Minimalist and elegant design solutions that focus on user experience and aesthetic appeal.'
+  },
+  'services.development.title': {
+    hr: 'Razvoj',
+    en: 'Development'
+  },
+  'services.development.description': {
+    hr: 'Čist, učinkovit kod koji oživljava vašu viziju s modernim tehnologijama i najboljim praksama.',
+    en: 'Clean, efficient code that brings your vision to life with modern technologies and best practices.'
+  },
+  'services.strategy.title': {
+    hr: 'Strategija',
+    en: 'Strategy'
+  },
+  'services.strategy.description': {
+    hr: 'Promišljeno planiranje i strateško razmišljanje kako bi vaš projekt postigao svoje ciljeve.',
+    en: 'Thoughtful planning and strategic thinking to ensure your project achieves its goals.'
   },
   
   // Treatments page
@@ -183,6 +217,10 @@ const translations: Translations = {
   'treatment.perSession': {
     hr: 'po sesiji',
     en: 'per session'
+  },
+  'treatment.notFound': {
+    hr: 'Tretman nije pronađen',
+    en: 'Treatment not found'
   },
   'treatment.facial.description1': {
     hr: 'Naš napredni tretman pomlađivanja lica kombinira najsuvremeniju tehnologiju s premium sastojcima za njegu kože kako bi obnovio prirodni sjaj i vitalnost vaše kože.',
@@ -301,6 +339,20 @@ const translations: Translations = {
     en: 'For Protection, we work with ingredients that support the long-term balance of healthy skin, detoxify it, and prevent external effects that may damage it. Among the ingredients that we include in our products to support this element are Squalene/ Squalane, Vitamin C, Green Tea, Red Vine, and Hibiscus.'
   },
   
+  // NotFound page
+  'notFound.title': {
+    hr: '404',
+    en: '404'
+  },
+  'notFound.message': {
+    hr: 'Ups! Stranica nije pronađena',
+    en: 'Oops! Page not found'
+  },
+  'notFound.backHome': {
+    hr: 'Povratak na početnu',
+    en: 'Return to Home'
+  },
+  
   // Footer
   'footer.contact': {
     hr: 'Kontaktirajte nas',
@@ -309,6 +361,18 @@ const translations: Translations = {
   'footer.tagline': {
     hr: 'Premium Beauty & Wellness',
     en: 'Premium Beauty & Wellness'
+  },
+  'footer.email': {
+    hr: 'info@podium.com',
+    en: 'info@podium.com'
+  },
+  'footer.phone': {
+    hr: '+1 (555) 123-4567',
+    en: '+1 (555) 123-4567'
+  },
+  'footer.address': {
+    hr: '123 Beauty Street, Wellness City',
+    en: '123 Beauty Street, Wellness City'
   }
 };
 

@@ -1,20 +1,23 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
-      title: "Design",
-      description: "Minimalist and elegant design solutions that focus on user experience and aesthetic appeal."
+      title: t('services.design.title'),
+      description: t('services.design.description')
     },
     {
-      title: "Development",
-      description: "Clean, efficient code that brings your vision to life with modern technologies and best practices."
+      title: t('services.development.title'),
+      description: t('services.development.description')
     },
     {
-      title: "Strategy",
-      description: "Thoughtful planning and strategic thinking to ensure your project achieves its goals."
+      title: t('services.strategy.title'),
+      description: t('services.strategy.description')
     }
   ];
 
@@ -27,10 +30,10 @@ const Services = () => {
             {/* Section Header */}
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-                Our Services
+                {t('services.title')}
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                We offer a range of services designed to help you create something beautiful and functional.
+                {t('services.description')}
               </p>
             </div>
 

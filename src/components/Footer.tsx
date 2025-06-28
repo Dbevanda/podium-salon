@@ -22,9 +22,9 @@ const Footer = () => {
           {/* Contact Details - moved to complete right */}
           <div className="text-center md:text-right">
             <h3 className="text-gray-900 font-medium mb-2">{t('footer.contact')}</h3>
-            <p className="text-gray-600 text-sm">info@podium.com</p>
-            <p className="text-gray-600 text-sm">+1 (555) 123-4567</p>
-            <p className="text-gray-600 text-sm">123 Beauty Street, Wellness City</p>
+            <p className="text-gray-600 text-sm">{t('footer.email')}</p>
+            <p className="text-gray-600 text-sm">{t('footer.phone')}</p>
+            <p className="text-gray-600 text-sm">{t('footer.address')}</p>
           </div>
         </div>
       </div>
