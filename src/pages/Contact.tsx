@@ -49,63 +49,49 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Info */}
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-4">{t('contact.info')}</h3>
-                  <div className="space-y-3">
-                    <p className="text-gray-600">{t('contact.email')}</p>
-                    <p className="text-gray-600">{t('contact.phone')}</p>
-                    <p className="text-gray-600">{t('contact.address')}</p>
-                  </div>
-                </div>
-              </div>
-
+            <div className="max-w-2xl mx-auto">
               {/* Contact Form */}
-              <div>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder={t('contact.form.name')}
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder={t('contact.form.email')}
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      rows={5}
-                      name="message"
-                      placeholder={t('contact.form.message')}
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors resize-none"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors"
-                  >
-                    {t('contact.form.send')}
-                  </button>
-                </form>
-              </div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder={t('contact.form.name')}
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder={t('contact.form.email')}
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    rows={5}
+                    name="message"
+                    placeholder={t('contact.form.message')}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors"
+                >
+                  {t('contact.form.send')}
+                </button>
+              </form>
             </div>
           </div>
         </section>
