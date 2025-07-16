@@ -21,7 +21,7 @@ const translations: Translations = {
   },
   'nav.about': {
     hr: 'O nama',
-    en: 'About us'  
+    en: 'About us'
   },
   'nav.contact': {
     hr: 'Kontakt',
@@ -30,16 +30,16 @@ const translations: Translations = {
   
   // Hero section
   'hero.title': {
-    hr: 'Podium Zagreb',
-    en: 'Podium Zagreb'
+    hr: 'Podium',
+    en: 'Podium'
   },
   'hero.subtitle': {
-    hr: 'Premium Beauty & Wellness',
-    en: 'Premium Beauty & Wellness'
+    hr: 'Premium',
+    en: 'Premium'
   },
   'hero.description': {
-    hr: 'Doživite budućnost ljepote s našim ekskluzivnim Future5 tretmanima. Otkrijte premium beauty usluge u najelegantijem salonu Zagreba, gdje se drevna mudrost susreće s modernim inovacijama.',
-    en: 'Experience the future of beauty with our exclusive Future5 treatments. Discover premium beauty services in Zagreb\'s most elegant salon, where ancient wisdom meets modern innovation.'
+    hr: 'Više od 20 godina iskustva u pristupu njege kože temeljenog na znanju, iskustvu i dubokoj posvećenosti svakom klijentu. Izbor proizvoda za rad rezultat je dugotrajnog istraživanja. Koristimo isključivo prirodne i holističke proizvode, bez štetnih sastojaka.\n\nUz sve napredne tehnologije za nas su najdragocjenije: ruke, oči i intuicija.\nSalon u srcu grada, mjesto gdje se klijentice osjećaju opušteno i njegovano. Bilo da dolazite na jedan tretman ili ste se odlučili za protokole, vašoj koži osigurali smo jedinstveno iskustvo s naglaskom na zdravlje i ljepotu kože.',
+    en: 'With over 20 years of experience, our approach to skincare is rooted in knowledge, dedication, and a deep commitment to each client. Every product we use is the result of thorough research – carefully selected based on strict quality standards, with a focus on natural, therapeutic formulas free from harmful ingredients.\n\nAlongside top-quality products and advanced equipment, the most valuable tools remain: hands, eyes, and intuition.\nOur salon is a peaceful oasis in the heart of the city – a place where clients feel relaxed, cared for, and seen.\nWhether you come for a single treatment or a complete beauty ritual, you\'ll leave feeling refreshed, confident, and radiant.'
   },
   'hero.specializing': {
     hr: 'Specijalizirani za:',
@@ -72,24 +72,24 @@ const translations: Translations = {
     en: 'About Podium Zagreb'
   },
   'about.description1': {
-    hr: 'Podium je zagrebački premijerni salon ljepote i wellnessa, gdje kombiniramo snagu jednostavnosti i elegancije s najsuvremenijom Future5 tehnologijom. Naš pristup spaja minimalističke dizajnerske principle s funkcionalnom izvrsnosti kako bismo stvorili iskustva koja su i lijepa i značajna.',
-    en: 'Podium is Zagreb\'s premier beauty and wellness salon, where we combine the power of simplicity and elegance with cutting-edge Future5 technology. Our approach merges minimalist design principles with functional excellence to create experiences that are both beautiful and meaningful.'
+    hr: 'Podium je mjesto gdje se snaga jednostavnosti i elegancije susreće s najsuvremenijom tehnologijom. Naš pristup spaja minimalističke taylor made principe s funkcionalnom izvrsnošću, stvarajući iskustva koja su značajna za kvalitetu kože i opću dobrobit.',
+    en: 'Podium is a place where the power of simplicity and elegance meets cutting-edge technology. Our approach combines minimalist, tailor-made principles with functional excellence, creating experiences that truly enhance skin quality and overall well-being.'
   },
   'about.description2': {
-    hr: 'Smješten u srcu Zagreba, salon Podium nudi ekskluzivne Future5 tretmane koji predstavljaju budućnost ljepote i wellnessa. Svaki tretman je prilika za pomicanje granica i istraživanje novih mogućnosti uz održavanje najviših standarda kvalitete i pažnje za detalje.',
-    en: 'Located in the heart of Zagreb, Podium salon offers exclusive Future5 treatments that represent the future of beauty and wellness. Every treatment is an opportunity to push boundaries and explore new possibilities while maintaining the highest standards of quality and attention to detail.'
+    hr: 'Smješten u srcu Zagreba, salon Podium nudi ekskluzivne protokole njege s izabranim brendovima, primjenjujući masažne tehnike ovisno o zahtjevima kože. Svaki tretman je prilika za pomicanje granica i istraživanje novih mogućnosti uz održavanje najviših standarda kvalitete i pažnje za detalje.',
+    en: 'Located in the heart of Zagreb, Podium offers exclusive skincare protocols using carefully selected brands, applying massage techniques tailored to the skin\'s specific needs. Each treatment is an opportunity to push boundaries and explore new possibilities, while maintaining the highest standards of quality and attention to detail.'
   },
   'about.description3': {
-    hr: 'Naš stručni tim u Podium Zagrebu sastoji se od iskusnih profesionalaca koji su strastveni u pružanju iznimnih Future5 rezultata tretmana. Ponosimo se našim personaliziranim pristupom, osiguravajući da svaki klijent dobije pažnju i njegu koju zaslužuje u našoj premium zagrebačkoj lokaciji.',
-    en: 'Our expert team at Podium Zagreb consists of experienced professionals who are passionate about delivering exceptional Future5 treatment results. We take pride in our personalized approach, ensuring that each client receives the attention and care they deserve in our premium Zagreb location.'
+    hr: 'Naša misija je posvetiti se svakom klijentu s potpunom pažnjom i stručnošću, pružajući tretman prilagođen individualnim potrebama kože.\nVerujemo da rezultati njege ne završavaju u salonu, zato uz svaki tretman pružamo personaliziranu preporuku za kućnu njegu, kako biste i kod kuće mogli nastaviti s njegom koja donosi vidljive i dugotrajne rezultate.',
+    en: 'Our mission is to dedicate full attention and expertise to each client, providing a treatment tailored to the skin\'s individual needs.\nWe believe that skincare results shouldn\'t end in the salon, which is why every treatment includes a personalized home care recommendation, allowing you to continue effective, visible, and long-lasting results at home.'
   },
   'about.description4': {
-    hr: 'S godinama iskustva u industriji ljepote i wellnessa, salon Podium je razvio tehnike koje nas izdvajaju od drugih zagrebačkih salona ljepote.',
-    en: 'With years of experience in the beauty and wellness industry, Podium salon has developed techniques that set us apart from other Zagreb beauty salons.'
+    hr: '.',
+    en: ''
   },
   'about.description5': {
-    hr: 'Vjerujemo da prava ljepota dolazi iznutra, a naš pristup bavi se i fizičkim i emocionalnim aspektima wellnessa. Naš cilj u Podium Zagrebu je pomoći vam da se osjećate samopouzdano, osvježeno i revitalizirano kroz naše tretmane.',
-    en: 'We believe that true beauty comes from within, and our approach addresses both the physical and emotional aspects of wellness. Our goal at Podium Zagreb is to help you feel confident, refreshed, and revitalized through our treatments.'
+    hr: 'Vjerujemo da prava ljepota dolazi iznutra, zato se u Podiumu brinemo i o izgledu i unutarnjem balansu. Naš cilj je da se kroz tretmane osjećate samopouzdano i revitalizirano.\n\n.',
+    en: 'We believe that true beauty comes from within, which is why at Podium we care for both your appearance and inner balance.\nOur goal is for you to leave each treatment feeling confident, refreshed, and renewed.\n\n.'
   },
   'about.readMore': {
     hr: 'Pročitajte više o Podiumu',
@@ -140,8 +140,8 @@ const translations: Translations = {
     en: 'Treatments'
   },
   'treatments.description': {
-    hr: 'Otkrijte naš asortiman naprednih tretmana dizajniranih da poboljšaju vašu prirodnu ljepotu.',
-    en: 'Discover our range of advanced treatments designed to enhance your natural beauty.'
+    hr: 'Otkrijte našu ponudu naprednih protokola.',
+    en: 'Discover our range of protocols.'
   },
   'treatments.resetDetoxify.name': {
     hr: 'Reset & Detoxify Protocol',
@@ -252,7 +252,7 @@ const translations: Translations = {
     en: '90 minutes'
   },
   'treatments.facial.suitableFor': {
-    hr: 'Svi tipovi kože, posebno zrela koža s znakovima starenja',
+    hr: 'Svi tipovi kože, posebno zrela koža sa znakovima starenja',
     en: 'All skin types, especially mature and aging skin'
   },
   'treatments.body.name': {
@@ -268,7 +268,7 @@ const translations: Translations = {
     en: '120 minutes'
   },
   'treatments.body.suitableFor': {
-    hr: 'Svi tipovi kože, idealno za stresnu i umornu kožu',
+    hr: 'Svi tipovi kože, idealno za umornu kožu od stresom',
     en: 'All skin types, ideal for stressed and tired skin'
   },
   'treatments.antiAging.name': {
@@ -310,8 +310,8 @@ const translations: Translations = {
     en: 'Price'
   },
   'treatment.perSession': {
-    hr: 'po sesiji',
-    en: 'per session'
+    hr: 'tretman',
+    en: 'treatment'
   },
   'treatment.notFound': {
     hr: 'Tretman nije pronađen',
@@ -350,7 +350,7 @@ const translations: Translations = {
     en: 'The procedure uses customized serums and gels based on skin type and finishes with a nourishing cream that soothes and restores. Perfect for dull, tired, and uneven skin in need of a refreshing boost.'
   },
   'treatment.brighteningTouch.description1': {
-    hr: 'Ovaj tretman usmjeren je na pročišćavanje, posvjetljivanje i dubinsku revitalizaciju kože. Kombinira enzimski piling, serum s posvjetljujućim učinkom, masku bogatu aktivnim sastojcima te opcionalnu upotrebu ultrazvučnog ili galvanic uređaja.',
+    hr: 'Ovaj tretman usmjeren je na pročišćavanje, posvjetljivanje i dubinsku revitalizaciju kože. Kombinira piling, serum s posvjetljujućim učinkom, masku bogatu aktivnim sastojcima te opcionalnu upotrebu ultrazvuka ili galvanske struje.',
     en: 'This facial focuses on purification, brightening, and deep revitalization of the skin. It combines enzymatic peeling, a brightening serum, a nutrient-rich mask, and optional use of an ultrasonic or galvanic device.'
   },
   'treatment.brighteningTouch.description2': {
@@ -358,8 +358,8 @@ const translations: Translations = {
     en: 'The treatment ends with a calming cream, leaving the skin radiant, smooth, and more even in tone. Perfect for dull, uneven, or tired skin.'
   },
   'treatment.sixtyMinutes.description1': {
-    hr: 'Ovaj tretman kombinira enzimski piling, aktivne serume i umirujuće maske kako bi koža bila dubinski očišćena, revitalizirana i nahranjena. Koristi se Heritage maska s Flash peelingom, nakon čega slijedi hranjiva maska s individualno prilagođenim serumima.',
-    en: 'This facial combines enzymatic peeling, active serums, and soothing masks to deeply cleanse, revitalize, and nourish the skin. The treatment includes a Heritage & Flash exfoliating mask, followed by a hydrating mask with custom-blended serums.'
+    hr: 'Ovaj tretman kombinira piling, aktivne serume i umirujuće maske kako bi koža bila dubinski očišćena, revitalizirana i nahranjena. Koristi se Heritage maska s Flash peelingom, nakon čega slijedi hranjiva maska s individualno prilagođenim serumima.',
+    en: 'This facial combines peeling, active serums, and soothing masks to deeply cleanse, revitalize, and nourish the skin. The treatment includes a Heritage & Flash exfoliating mask, followed by a hydrating mask with custom-blended serums.'
   },
   'treatment.sixtyMinutes.description2': {
     hr: 'Tretman završava završnom kremom za obnovu kože, ostavljajući je osvježenu, blistaviju i s poboljšanom teksturom. Idealan je za redovitu njegu i održavanje zdravog izgleda kože.',
@@ -386,18 +386,18 @@ const translations: Translations = {
     en: 'Our most advanced anti-aging treatment combines cutting-edge technology with scientifically proven ingredients to combat signs of aging at the cellular level.'
   },
   'treatment.antiAging.description2': {
-    hr: 'Ovaj premium tretman cilja duboke bore, mrlje od starenja i gubitak čvrstoće, pružajući vidljive rezultate i dugotrajno pomlađivanje.',
+    hr: 'Ovaj premium tretman usmjeren na duboke bore, hiperpigmentacije i gubitak čvrstoće, pružajući vidljive rezultate i dugotrajno pomlađivanje.',
     en: 'This premium treatment targets deep wrinkles, age spots, and loss of firmness, delivering visible results and long-lasting rejuvenation.'
   },
   
   // Contact page
   'contact.title': {
-    hr: 'Kontaktirajte nas',
+    hr: 'Kontaktirajte nas već danas',
     en: 'Get In Touch'
   },
   'contact.description': {
-    hr: 'Razgovarajmo o vašem projektu i vidimo kako možemo raditi zajedno.',
-    en: 'Let\'s discuss your project and see how we can work together.'
+    hr: 'Molimo ispunite podatke u nastavku i povratno ćemo vam se javiti u najkraćem mogućem roku.',
+    en: 'Please fill in the information below and we\'ll get back to you as soon as possible.'
   },
   'contact.info': {
     hr: 'Kontakt informacije',
@@ -438,15 +438,15 @@ const translations: Translations = {
     en: 'The 5 Elements'
   },
   'elements.description': {
-    hr: 'Naša filozofija njege kože izgrađena je oko pet osnovnih elemenata koji rade zajedno kako bi pružili sveobuhvatno zdravlje kože i poboljšanje ljepote.',
-    en: 'Our skincare philosophy is built around five essential elements that work together to provide comprehensive skin health and beauty enhancement.'
+    hr: 'Naša filozofija njege kože temeljena na 5 osnovnih elemenata koji rade zajedno kako bi pružili sveobuhvatno zdravlje kože.',
+    en: 'Our skincare philosophy is built around five essential elements that work together to provide comprehensive skin health.'
   },
   'elements.purification.name': {
     hr: 'PROČIŠĆAVANJE',
     en: 'PURIFICATION'
   },
   'elements.purification.description': {
-    hr: 'Za pročišćavanje, odabrali smo sastojke koji mogu nježno očistiti kožu, ukloniti nečistoće, eksfolirati mrtve stanice, umiriti iritaciju kože, eliminirati štetne bakterije i liječiti opekline i rane. Među ključnim sastojcima koji podržavaju ovaj element su Saponaria Officinalis (sapunica), zelena francuska glina, veliki čičak, pivski kvasac i mimoza kora.',
+    hr: 'Za pročišćavanje, odabrali smo sastojke koji mogu nježno očistiti kožu, ukloniti nečistoće, eksfolirati mrtve stanice, umiriti iritaciju kože, eliminirati štetne učinke te liječiti upalna stanja. Među ključnim sastojcima koji podržavaju ovaj element su Saponaria Officinalis (sapunica), zelena francuska glina, veliki čičak, pivski kvasac i mimoza kora.',
     en: 'For Purification, we selected ingredients that can gently cleanse the skin, remove impurities, exfoliate dead cells, calm skin irritation, eliminate harmful bacteria, and heal burns and wounds. Among the key ingredients supporting this element are Saponaria Officinalis (Soapwort), Green French clay, Great Burdock, Brewer\'s Yeast, and Mimosa Bark.'
   },
   'elements.stimulation.name': {
@@ -502,20 +502,20 @@ const translations: Translations = {
     en: 'Contact Us'
   },
   'footer.tagline': {
-    hr: 'Premium Beauty & Wellness',
-    en: 'Premium Beauty & Wellness'
+    hr: 'Premium Beauty',
+    en: 'Premium Beauty'
   },
   'footer.email': {
     hr: 'info@podium.com',
     en: 'info@podium.com'
   },
   'footer.phone': {
-    hr: '+1 (555) 123-4567',
-    en: '+1 (555) 123-4567'
+    hr: '+38598 1967172',
+    en: '+38598 1967172'
   },
   'footer.address': {
-    hr: '123 Beauty Street, Wellness City',
-    en: '123 Beauty Street, Wellness City'
+    hr: 'Jurja Žerjavića 9, 10000 Zagreb',
+    en: 'Jurja Žerjavića 9, 10000 Zagreb'
   }
 };
 
