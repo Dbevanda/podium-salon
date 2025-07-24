@@ -12,7 +12,7 @@ interface Translations {
 
 const translations: Translations = {
   // Navigation
-  'nav.home': {
+  'nav.homepage': {
     hr: 'Početna',
     en: 'Homepage'
   },
