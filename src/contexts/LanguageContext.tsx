@@ -444,6 +444,18 @@ const translations: Translations = {
     hr: 'Pošaljite poruku',
     en: 'Send Message'
   },
+  'contact.form.required': {
+    hr: 'Molimo unesite sva obavezna polja',
+    en: 'Please fill in all required fields'
+  },
+  'contact.form.success': {
+    hr: 'Poruka je uspješno poslana! Otvorit će se vaš email klijent.',
+    en: 'Message sent successfully! Your email client will open.'
+  },
+  'contact.form.error': {
+    hr: 'Greška pri slanju poruke. Molimo pokušajte ponovno.',
+    en: 'Error sending message. Please try again.'
+  },
   
   // 5 Elements page
   'elements.title': {

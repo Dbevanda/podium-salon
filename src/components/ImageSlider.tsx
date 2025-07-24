@@ -1,10 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ImageSlider = () => {
   const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const slides = [
     {
@@ -35,14 +40,66 @@ const ImageSlider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 15000); // 15 seconds
+      if (!isTransitioning) {
+        nextSlide();
+      }
+    }, 10000); // Changed from 15000 to 10000 (10 seconds)
 
     return () => clearInterval(interval);
-  }, [slides.length]);
+  }, [currentSlide, isTransitioning]);
+
+  const nextSlide = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setTimeout(() => setIsTransitioning(false), 1000);
+  };
+
+  const prevSlide = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setTimeout(() => setIsTransitioning(false), 1000);
+  };
+
+  const goToSlide = (index: number) => {
+    if (isTransitioning || index === currentSlide) return;
+    setIsTransitioning(true);
+    setCurrentSlide(index);
+    setTimeout(() => setIsTransitioning(false), 1000);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].screenX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+    
+    const distance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 50;
+
+    if (Math.abs(distance) < minSwipeDistance) return;
+
+    if (distance > 0) {
+      nextSlide(); // Swipe left - next slide
+    } else {
+      prevSlide(); // Swipe right - prev slide
+    }
+  };
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section 
+      className="relative h-screen w-full overflow-hidden pt-28"
+      ref={sliderRef}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -71,15 +128,36 @@ const ImageSlider = () => {
         </div>
       ))}
       
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        disabled={isTransitioning}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200 disabled:opacity-50"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft size={24} />
+      </button>
+      
+      <button
+        onClick={nextSlide}
+        disabled={isTransitioning}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-200 disabled:opacity-50"
+        aria-label="Next slide"
+      >
+        <ChevronRight size={24} />
+      </button>
+      
       {/* Slide indicators */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+            onClick={() => goToSlide(index)}
+            disabled={isTransitioning}
+            className={`w-3 h-3 rounded-full transition-colors duration-200 disabled:opacity-50 ${
               index === currentSlide ? "bg-white" : "bg-white/50"
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

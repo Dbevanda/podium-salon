@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -17,12 +18,18 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create nicely formatted email content
-    const subject = formData.subject || `Contact from ${formData.name} - Podium Zagreb`;
-    const body = `
-Dear Podium Zagreb Team,
+    // Validate required fields
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      toast.error(t('contact.form.required'));
+      return;
+    }
 
-You have received a new contact form submission:
+    try {
+      // Create nicely formatted email content
+      const subject = formData.subject.trim() || `Contact from ${formData.name} - Podium Zagreb`;
+      const body = `Dear Podium Zagreb Team,
+
+You have received a new contact form submission from your website:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -39,18 +46,33 @@ ${formData.message}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 This message was sent from the Podium Zagreb website contact form.
-Please reply directly to this email to respond to the customer.
+Please reply directly to ${formData.email} to respond to the customer.
 
 Best regards,
 Podium Zagreb Website System`;
 
-    const mailtoLink = `mailto:skincare.podium@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Reset form
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      // Create mailto link with proper encoding
+      const mailtoLink = `mailto:skincare.podium@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Try to open email client
+      const emailWindow = window.open(mailtoLink, '_blank');
+      
+      // Check if popup was blocked or failed
+      setTimeout(() => {
+        if (!emailWindow || emailWindow.closed) {
+          // Fallback: try direct location change
+          window.location.href = mailtoLink;
+        }
+      }, 100);
+      
+      // Show success message and reset form
+      toast.success(t('contact.form.success'));
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      
+    } catch (error) {
+      console.error('Email error:', error);
+      toast.error(t('contact.form.error'));
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
