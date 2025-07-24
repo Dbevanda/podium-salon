@@ -31,6 +31,9 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
+            <Link to="/" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 ease-in-out uppercase hover:scale-105">
+              {t('nav.home')}
+            </Link>
             <Link to="/treatments" className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wide transition-all duration-200 ease-in-out uppercase hover:scale-105">
               {t('nav.treatments')}
             </Link>
@@ -65,6 +68,9 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200" style={{ backgroundColor: '#FCFBFA' }}>
             <div className="px-2 pt-2 pb-3 space-y-1">
+              <Link to="/" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 ease-in-out hover:scale-105">
+                {t('nav.home')}
+              </Link>
               <Link to="/treatments" className="block px-3 py-2 text-gray-700 hover:text-gray-900 text-sm font-medium uppercase text-center transition-all duration-200 ease-in-out hover:scale-105">
                 {t('nav.treatments')}
               </Link>

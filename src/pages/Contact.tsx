@@ -9,22 +9,48 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
+    subject: "",
     message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create mailto link with podium-salon@gmail.com as recipient
-    const subject = `Message from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:podium-salon@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // Create nicely formatted email content
+    const subject = formData.subject || `Contact from ${formData.name} - Podium Zagreb`;
+    const body = `
+Dear Podium Zagreb Team,
+
+You have received a new contact form submission:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👤 NAME: ${formData.name}
+📧 EMAIL: ${formData.email}
+📱 PHONE: ${formData.phone || 'Not provided'}
+📝 SUBJECT: ${formData.subject || 'General Inquiry'}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💬 MESSAGE:
+${formData.message}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This message was sent from the Podium Zagreb website contact form.
+Please reply directly to this email to respond to the customer.
+
+Best regards,
+Podium Zagreb Website System`;
+
+    const mailtoLink = `mailto:skincare.podium@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Open email client
     window.location.href = mailtoLink;
     
     // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -71,6 +97,26 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder={t('contact.form.phone')}
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder={t('contact.form.subject')}
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-none focus:outline-none focus:border-gray-400 transition-colors"
                   />
                 </div>

@@ -12,6 +12,10 @@ interface Translations {
 
 const translations: Translations = {
   // Navigation
+  'nav.home': {
+    hr: 'Početna',
+    en: 'Homepage'
+  },
   'nav.treatments': {
     hr: 'Tretmani',
     en: 'Treatments'
@@ -423,6 +427,14 @@ const translations: Translations = {
   'contact.form.email': {
     hr: 'Vaš email',
     en: 'Your Email'
+  },
+  'contact.form.phone': {
+    hr: 'Vaš telefon (opcionalno)',
+    en: 'Your Phone (optional)'
+  },
+  'contact.form.subject': {
+    hr: 'Naslov (opcionalno)',
+    en: 'Subject (optional)'
   },
   'contact.form.message': {
     hr: 'Vaša poruka',
