@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -43,7 +44,7 @@ const ImageSlider = () => {
       if (!isTransitioning) {
         nextSlide();
       }
-    }, 10000); // Changed from 15000 to 10000 (10 seconds)
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [currentSlide, isTransitioning]);
@@ -87,15 +88,15 @@ const ImageSlider = () => {
     if (Math.abs(distance) < minSwipeDistance) return;
 
     if (distance > 0) {
-      nextSlide(); // Swipe left - next slide
+      nextSlide();
     } else {
-      prevSlide(); // Swipe right - prev slide
+      prevSlide();
     }
   };
 
   return (
     <section 
-      className="relative h-screen w-full overflow-hidden pt-28"
+      className="relative h-[70vh] w-full overflow-hidden pt-28"
       ref={sliderRef}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -114,12 +115,12 @@ const ImageSlider = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <div className="text-center text-white">
-              <h2 className="text-4xl md:text-6xl font-light mb-8 tracking-wide">
+              <h2 className="text-3xl md:text-5xl font-light mb-6 tracking-wide">
                 {slide.title}
               </h2>
               <Link
                 to={slide.link}
-                className="inline-block px-8 py-3 bg-white text-gray-900 text-sm font-medium tracking-wide uppercase hover:bg-gray-100 transition-colors duration-200"
+                className="inline-block px-6 py-2 bg-white text-gray-900 text-sm font-medium tracking-wide uppercase hover:bg-gray-100 transition-colors duration-200"
               >
                 {slide.title}
               </Link>
