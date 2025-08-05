@@ -15,7 +15,7 @@ const AboutTextContent = () => {
       
       <div className="relative">
         {/* First embedded image - float left */}
-        <div className="float-left mr-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+        <div className="float-left mr-6 mb-4 w-64 h-64 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
           <img 
             src="/lovable-uploads/05ae8591-7522-4d65-b51f-5798effc4515.png"
             alt="Elegant candles creating spa ambiance"
@@ -39,10 +39,10 @@ const AboutTextContent = () => {
         <div className="space-y-4">
           <div className="relative">
             {/* Second embedded image - float right */}
-            <div className="float-right ml-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+            <div className="float-right ml-6 mb-4 w-64 h-64 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
               <img 
-                src={getImageSrc(images.about.wellnessArea)}
-                alt="Wellness Area"
+                src="/lovable-uploads/5b1bd3f3-73ae-4a22-aa77-deea706e0d76.png"
+                alt="Beauty treatment with specialized skincare tools"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
