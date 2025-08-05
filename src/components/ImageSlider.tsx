@@ -20,21 +20,9 @@ const ImageSlider = () => {
       alt: "Spa treatment tools and skincare products"
     },
     {
-      image: "/lovable-uploads/6d3438e7-148b-46dd-9c76-41defa912d90.png",
+      image: "/lovable-uploads/8a9c85bd-a4d1-47c1-ad57-f310ae6f73cc.png",
       title: t('nav.about'),
       link: "/about", 
-      alt: "Elegant consultation area with comfortable seating"
-    },
-    {
-      image: "/lovable-uploads/05ae8591-7522-4d65-b51f-5798effc4515.png",
-      title: t('nav.elements'),
-      link: "/the-5-elements",
-      alt: "Elegant candles creating spa ambiance"
-    },
-    {
-      image: "/lovable-uploads/8a9c85bd-a4d1-47c1-ad57-f310ae6f73cc.png",
-      title: t('nav.contact'),
-      link: "/contact",
       alt: "Modern treatment room with natural lighting"
     }
   ];

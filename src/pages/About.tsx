@@ -23,8 +23,8 @@ const About = () => {
       {/* Hero Image at the top - same as homepage */}
       <div className="absolute top-16 left-0 right-0 h-60 overflow-hidden z-0">
         <OptimizedImage 
-          src="/lovable-uploads/aae7982a-6aad-41a8-91d5-b081abca6cb1.png"
-          alt="Premium cosmetic textures"
+          src="/lovable-uploads/6d3438e7-148b-46dd-9c76-41defa912d90.png"
+          alt="Elegant consultation area with comfortable seating"
           className="w-full h-full object-cover opacity-50"
           loading="eager"
           fallback="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"

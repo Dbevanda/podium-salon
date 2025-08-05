@@ -17,8 +17,8 @@ const AboutTextContent = () => {
         {/* First embedded image - float left */}
         <div className="float-left mr-6 mb-4 w-64 h-48 bg-gray-50 rounded-lg shadow-sm overflow-hidden">
           <img 
-            src={getImageSrc(images.about.treatmentRoom)}
-            alt="Treatment Room"
+            src="/lovable-uploads/05ae8591-7522-4d65-b51f-5798effc4515.png"
+            alt="Elegant candles creating spa ambiance"
             className="w-full h-full object-cover"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
