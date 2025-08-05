@@ -24,6 +24,18 @@ const ImageSlider = () => {
       title: t('nav.about'),
       link: "/about", 
       alt: "Modern treatment room with natural lighting"
+    },
+    {
+      image: "/lovable-uploads/60661b0f-870b-495a-8cc3-e805bc75ba04.png",
+      title: t('nav.elements'),
+      link: "/the-5-elements",
+      alt: "Premium cosmetic textures representing the 5 elements"
+    },
+    {
+      image: "/lovable-uploads/348a8816-3878-47d3-b503-bcd504dd1a27.png",
+      title: t('nav.contact'),
+      link: "/contact",
+      alt: "Elegant consultation area with comfortable seating"
     }
   ];
 
