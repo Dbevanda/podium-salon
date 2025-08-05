@@ -20,29 +20,18 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Header />
-      {/* Hero Image at the top - same as homepage */}
-      <div className="absolute top-16 left-0 right-0 h-60 overflow-hidden z-0">
+      {/* Hero Image at the top - behind header, full height */}
+      <div className="absolute top-0 left-0 right-0 h-80 overflow-hidden z-0">
         <OptimizedImage 
-          src="/lovable-uploads/6d3438e7-148b-46dd-9c76-41defa912d90.png"
-          alt="Elegant consultation area with comfortable seating"
+          src="/lovable-uploads/5dbde0f7-d10a-446c-8865-93c701b2eede.png"
+          alt="Elegant spa interior with modern design"
           className="w-full h-full object-cover opacity-50"
           loading="eager"
-          fallback="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
         />
       </div>
       
       <main className="pt-16 min-h-screen flex items-center bg-white relative z-10">
-        {/* Full-width image section */}
-        <div className="w-full h-64 mb-8 overflow-hidden">
-          <OptimizedImage 
-            src="/lovable-uploads/5dbde0f7-d10a-446c-8865-93c701b2eede.png"
-            alt="Elegant spa interior with modern design"
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pt-80">
           <Suspense fallback={<ComponentLoader />}>
             <AboutTextContent />
           </Suspense>
