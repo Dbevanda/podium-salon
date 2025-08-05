@@ -14,28 +14,28 @@ const ImageSlider = () => {
 
   const slides = [
     {
-      image: "photo-1469474968028-56623f02e425",
+      image: "/lovable-uploads/6c102122-b219-4ca3-b981-e62f823012b8.png",
       title: t('nav.treatments'),
       link: "/treatments",
-      alt: "Mountain landscape with sun rays"
+      alt: "Spa treatment tools and skincare products"
     },
     {
-      image: "photo-1458668383970-8ddd3927deed",
+      image: "/lovable-uploads/6d3438e7-148b-46dd-9c76-41defa912d90.png",
       title: t('nav.about'),
       link: "/about", 
-      alt: "Mountain alps landscape"
+      alt: "Elegant consultation area with comfortable seating"
     },
     {
-      image: "photo-1500375592092-40eb2168fd21",
+      image: "/lovable-uploads/05ae8591-7522-4d65-b51f-5798effc4515.png",
       title: t('nav.elements'),
       link: "/the-5-elements",
-      alt: "Ocean wave at beach"
+      alt: "Elegant candles creating spa ambiance"
     },
     {
-      image: "photo-1506744038136-46273834b3fb",
+      image: "/lovable-uploads/8a9c85bd-a4d1-47c1-ad57-f310ae6f73cc.png",
       title: t('nav.contact'),
       link: "/contact",
-      alt: "Body of water surrounded by trees"
+      alt: "Modern treatment room with natural lighting"
     }
   ];
 
@@ -109,7 +109,7 @@ const ImageSlider = () => {
           }`}
         >
           <img
-            src={`https://images.unsplash.com/${slide.image}?auto=format&fit=crop&w=1920&q=80`}
+            src={slide.image}
             alt={slide.alt}
             className="w-full h-full object-cover"
           />
