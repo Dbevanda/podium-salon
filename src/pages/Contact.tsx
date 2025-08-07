@@ -15,7 +15,7 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validate required fields
@@ -25,52 +25,22 @@ const Contact = () => {
     }
 
     try {
-      // Create nicely formatted email content
-      const subject = formData.subject.trim() || `Contact from ${formData.name} - Podium Zagreb`;
-      const body = `Dear Podium Zagreb Team,
+      const response = await fetch('/functions/v1/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-You have received a new contact form submission from your website:
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-👤 NAME: ${formData.name}
-📧 EMAIL: ${formData.email}
-📱 PHONE: ${formData.phone || 'Not provided'}
-📝 SUBJECT: ${formData.subject || 'General Inquiry'}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-💬 MESSAGE:
-${formData.message}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This message was sent from the Podium Zagreb website contact form.
-Please reply directly to ${formData.email} to respond to the customer.
-
-Best regards,
-Podium Zagreb Website System`;
-
-      // Create mailto link with proper encoding
-      const mailtoLink = `mailto:skincare.podium@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
-      // Try to open email client
-      const emailWindow = window.open(mailtoLink, '_blank');
-      
-      // Check if popup was blocked or failed
-      setTimeout(() => {
-        if (!emailWindow || emailWindow.closed) {
-          // Fallback: try direct location change
-          window.location.href = mailtoLink;
-        }
-      }, 100);
-      
-      // Show success message and reset form
-      toast.success(t('contact.form.success'));
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      
+      if (response.ok) {
+        toast.success(t('contact.form.success'));
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        throw new Error('Failed to send email');
+      }
     } catch (error) {
-      console.error('Email error:', error);
+      console.error('Error sending email:', error);
       toast.error(t('contact.form.error'));
     }
   };
