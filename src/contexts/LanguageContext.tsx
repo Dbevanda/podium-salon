@@ -409,8 +409,8 @@ const translations: Translations = {
     en: 'Contact Information'
   },
   'contact.email': {
-    hr: 'Email: hello@podium.com',
-    en: 'Email: hello@podium.com'
+    hr: 'Email: skincare.podium@gmail.com',
+    en: 'Email: skincare.podium@gmail.com'
   },
   'contact.phone': {
     hr: 'Telefon: +385 98-1967-172',
@@ -531,8 +531,8 @@ const translations: Translations = {
     en: 'Premium Beauty'
   },
   'footer.email': {
-    hr: 'info@podium.com',
-    en: 'info@podium.com'
+    hr: 'skincare.podium@gmail.com',
+    en: 'skincare.podium@gmail.com'
   },
   'footer.phone': {
     hr: '+38598 1967172',

@@ -18,7 +18,7 @@ const Contact = () => {
             <div>
               <h3 className="text-lg font-medium text-gray-900 mb-4">Contact Information</h3>
               <div className="space-y-3">
-                <p className="text-gray-600">Email: hello@brand.com</p>
+                <p className="text-gray-600">Email: skincare.podium@gmail.com</p>
                 <p className="text-gray-600">Phone: +1 (555) 123-4567</p>
                 <p className="text-gray-600">Address: 123 Design Street, City, State 12345</p>
               </div>
