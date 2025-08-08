@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { toast } from "react-hot-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -25,20 +26,16 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch('/functions/v1/send-contact-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
       });
 
-      if (response.ok) {
-        toast.success(t('contact.form.success'));
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      } else {
-        throw new Error('Failed to send email');
+      if (error) {
+        throw new Error(error.message || 'Failed to send email');
       }
+
+      toast.success(t('contact.form.success'));
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch (error) {
       console.error('Error sending email:', error);
       toast.error(t('contact.form.error'));
