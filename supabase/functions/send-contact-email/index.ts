@@ -131,7 +131,7 @@ serve(async (req) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Podium Zagreb <website@podium-zagreb.com>",
+        from: "Podium Zagreb <onboarding@resend.dev>",
         to: ["skincare.podium@gmail.com"],
         reply_to: email,
         subject: `Contact Form: ${subject}`,
@@ -140,11 +140,12 @@ serve(async (req) => {
     });
 
     const responseData = await emailResponse.json();
-    console.log("Resend API response:", responseData);
+    console.log("Resend API response status:", emailResponse.status);
+    console.log("Resend API response data:", JSON.stringify(responseData, null, 2));
 
     if (!emailResponse.ok) {
-      console.error("Resend API error:", emailResponse.status, responseData);
-      throw new Error(`Resend API error: ${responseData.message || 'Unknown error'}`);
+      console.error("Resend API error:", emailResponse.status, JSON.stringify(responseData, null, 2));
+      throw new Error(`Resend API error: ${responseData.message || JSON.stringify(responseData)}`);
     }
 
     console.log("Email sent successfully:", responseData.id);
