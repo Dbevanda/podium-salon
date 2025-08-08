@@ -1,6 +1,11 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import React from 'npm:react@18.3.1'
+import { Resend } from 'npm:resend@4.0.0'
+import { renderAsync } from 'npm:@react-email/components@0.0.22'
+import { ContactEmail } from './_templates/contact-email.tsx'
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+const resend = new Resend(RESEND_API_KEY);
 
 interface ContactFormData {
   name: string;
@@ -35,51 +40,35 @@ serve(async (req) => {
       );
     }
 
-    // Prepare email content
-    const emailBody = `
-New contact form submission from Podium Zagreb website:
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-Subject: ${subject}
-
-Message:
-${message}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This message was sent from the Podium Zagreb website contact form.
-Please reply directly to ${email} to respond to the customer.
-
-Best regards,
-Podium Zagreb Website System
-    `.trim();
+    // Render the React email template
+    const html = await renderAsync(
+      React.createElement(ContactEmail, {
+        name,
+        email,
+        phone,
+        subject,
+        message,
+      })
+    );
 
     // Send email using Resend
-    const emailResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${RESEND_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: "website@podium-zagreb.com",
-        to: ["skincare.podium@gmail.com"],
-        reply_to: email,
-        subject: `Contact Form: ${subject}`,
-        text: emailBody,
-      }),
+    const { data, error } = await resend.emails.send({
+      from: "Podium Zagreb <website@podium-zagreb.com>",
+      to: ["skincare.podium@gmail.com"],
+      reply_to: email,
+      subject: `Contact Form: ${subject}`,
+      html,
     });
 
-    if (!emailResponse.ok) {
-      const errorData = await emailResponse.text();
-      console.error("Resend API error:", errorData);
+    if (error) {
+      console.error("Resend API error:", error);
       throw new Error("Failed to send email");
     }
 
+    console.log("Email sent successfully:", data);
+
     return new Response(
-      JSON.stringify({ message: "Email sent successfully" }),
+      JSON.stringify({ message: "Email sent successfully", id: data?.id }),
       { 
         status: 200, 
         headers: { ...corsHeaders, "Content-Type": "application/json" } 
